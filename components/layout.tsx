@@ -1,12 +1,15 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
-import NavDropdown from 'react-bootstrap/NavDropdown'
+
+import styles from './layout.module.css'
+import { useState } from 'react'
 
 
-export const siteTitle = 'Ionkom'
+export const siteTitle = 'ionkom'
 
 export default function Layout({
   children,
@@ -15,6 +18,7 @@ export default function Layout({
   children: React.ReactNode
   home?: boolean
 }) {
+  const router = useRouter();
   return (
     <>
       <Head>
@@ -25,22 +29,18 @@ export default function Layout({
         />
       </Head>
 
-      <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#home">Ionkom</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-        </Navbar.Collapse>
+      <Navbar bg="white" expand="lg" className={`align-items-center p-3 px-md-4 mb-3 ${styles.borderBottom} ${styles.boxShadow}`}>
+        <Link href="/" passHref>
+          <Navbar.Brand className={styles.logoFont}>{siteTitle}</Navbar.Brand>
+        </Link>
+        <Nav className="ml-auto" activeKey={router.pathname}>
+          <Link href="/" passHref>
+            <Nav.Link>Home</Nav.Link>
+          </Link>
+          <Link href="/services" passHref>
+            <Nav.Link>Services</Nav.Link>
+          </Link>
+        </Nav>
       </Navbar>
       
       <main>{children}</main>
