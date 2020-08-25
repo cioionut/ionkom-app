@@ -8,9 +8,16 @@ export default function Home() {
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
+        <meta property="og:site_name" content={siteTitle}></meta>
+        <meta property="og:title" content={`${siteTitle} - Everyone can inspire! Write your beliefs!`}></meta>
+        <meta property="og:url" content="https://ionkom.com/"></meta>
+        <meta
+            name="description"
+            content="Connect with people you admire, profesionists and creative people"
+        />
       </Head>
       <section>
-        <p>hau</p>
+        <p>Home</p>
       </section>
     </Layout>
   )
