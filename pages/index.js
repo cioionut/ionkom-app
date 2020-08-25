@@ -9,15 +9,15 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
         <meta property="og:site_name" content={siteTitle}></meta>
-        <meta property="og:title" content={`${siteTitle} - Everyone can inspire! Write your beliefs!`}></meta>
-        <meta property="og:url" content="https://ionkom.com/"></meta>
+        <meta property="og:title" content={`${siteTitle}`}></meta>
+        <meta property="og:url" content="http://ionkom.com/"></meta>
         <meta
             name="description"
-            content="Connect with people you admire, profesionists and creative people"
+            content="Learn how to become more productive and share your experience. Ionkom provides many useful online services that makes your life easier"
         />
       </Head>
       <section>
-        <p>Home</p>
+        <p>Let's make some time!</p>
       </section>
     </Layout>
   )

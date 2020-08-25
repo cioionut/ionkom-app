@@ -35,6 +35,9 @@ export default function Layout({
             <Link href="/services" passHref>
               <Nav.Link>Services</Nav.Link>
             </Link>
+            <Link href="/about" passHref>
+              <Nav.Link>About</Nav.Link>
+            </Link>
           </Nav>
         </Navbar>
         
