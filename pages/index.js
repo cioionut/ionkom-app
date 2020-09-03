@@ -10,7 +10,7 @@ export default function Home() {
         <title>{siteTitle}</title>
         <meta property="og:site_name" content={siteTitle}></meta>
         <meta property="og:title" content={`${siteTitle}`}></meta>
-        <meta property="og:url" content="http://ionkom.com/"></meta>
+        <meta property="og:url" content="https://www.ionkom.com/"></meta>
         <meta
             name="description"
             content="Learn how to become more productive and share your experience. Ionkom provides many useful online services that makes your life easier"
