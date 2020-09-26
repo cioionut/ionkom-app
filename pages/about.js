@@ -10,7 +10,10 @@ export default function About() {
         <title>{`${siteTitle} - About us and our mission`}</title>
       </Head>
       <section>
-        <p>Our mission is to help people to understand technology in order to create more free time for their passions.</p>
+        <p>
+          Our mission is to create more free <b>time</b> for humans and
+          help them to better understand and use technology.
+        </p>
       </section>
       <Link href="/">
         <a>← Back to home</a>

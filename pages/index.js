@@ -17,7 +17,9 @@ export default function Home() {
         />
       </Head>
       <section>
-        <p>Let's make some time!</p>
+        <p>
+          See our list of <Link href="/services"><a>online services</a></Link>
+        </p>
       </section>
     </Layout>
   )
