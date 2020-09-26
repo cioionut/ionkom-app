@@ -7,10 +7,10 @@ export default function About() {
   return (
     <Layout home>
       <Head>
-        <title>{`${siteTitle} - About us and our mission`}</title>
+        <title>{`${siteTitle} - about us and our mission`}</title>
       </Head>
-      <section>
-        <p>
+      <section className="container">
+        <p style={{ fontSize: 21 }}>
           Our mission is to create more free <b>time</b> for humans and
           help them to better understand and use technology.
         </p>

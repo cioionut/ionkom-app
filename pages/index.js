@@ -16,10 +16,10 @@ export default function Home() {
             content="Learn how to become more productive and share your experience. Ionkom provides many useful online services that makes your life easier"
         />
       </Head>
-      <section>
-        <p>
+      <section className="container">
+        <h5>
           See our list of <Link href="/services"><a>online services</a></Link>
-        </p>
+        </h5>
       </section>
     </Layout>
   )

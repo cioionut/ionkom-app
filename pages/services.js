@@ -7,24 +7,18 @@ export default function Services() {
   return (
     <Layout home>
       <Head>
-        <title>{`${siteTitle} - Services`}</title>
+        <title>{`${siteTitle} - services`}</title>
       </Head>
       <section>
         <ul>
           <li>
-            <Link href="https://vremea.ionkom.com">
-              <a target="_blank">Weather</a>
-            </Link>
+            <a href="https://vremea.ionkom.com" target="_blank">Weather</a>
           </li>
           <li>
-            <Link href="https://cioionut.github.io/nlu-demo">
-              <a target="_blank">Virtual Digital Asisstant</a>
-            </Link>
+            <a href="https://cioionut.github.io/nlu-demo" target="_blank">Virtual Digital Asisstant</a>
           </li>
           <li>
-            <Link href="https://cioionut.github.io/nlu-demo">
-              <a target="_blank">Natural Language Understanding</a>
-            </Link>
+            <a href="https://cioionut.github.io/nlu-demo" target="_blank">Natural Language Understanding</a>
           </li>
           <li>Ionkom App</li>
         </ul>
