@@ -26,7 +26,7 @@ class NLUinAction extends React.Component {
             "confidence_score": 0.0,
             "end": null,
             "entity_type": "t1",
-            "entity_value": "please wait until the cio-nlu server wakes up",
+            "entity_value": "please wait 30 seconds until the cio-nlu server wakes up",
             "start": null
           }
         ],

@@ -38,6 +38,9 @@ export default function Layout({
               <Link href="/cionlu" passHref>
                 <Nav.Link>NLU</Nav.Link>
               </Link>
+              <Link href="/dialog-system" passHref>
+                <Nav.Link>Dialog System</Nav.Link>
+              </Link>
               <Link href="/services" passHref>
                 <Nav.Link>Services</Nav.Link>
               </Link>
