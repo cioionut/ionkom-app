@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Layout, { siteTitle } from '../components/layout'
+import { Container, Row } from 'react-bootstrap'
 
 
 export default function Home() {
@@ -16,11 +17,13 @@ export default function Home() {
             content="Learn how to become more productive and share your experience. Ionkom provides many useful online services that makes your life easier"
         />
       </Head>
-      <section className="container">
-        <h5>
-          See our list of <Link href="/services"><a>online services</a></Link>
-        </h5>
-      </section>
+      <Container>
+        <Row className="justify-content-center">
+          <h5>
+            Contact: <a href="mailto:ionut.ciocoiu@ionkom.com">ionut.ciocoiu@ionkom.com</a>
+          </h5>
+        </Row>
+      </Container>
     </Layout>
   )
 }
