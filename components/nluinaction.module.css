@@ -1,0 +1,9 @@
+.nluContent {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.submitBtn {
+    margin-top: 0.5rem;
+    border-radius: 1rem;
+    width: 5rem;
+}

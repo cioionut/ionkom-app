@@ -8,3 +8,18 @@
 
 .borderTop { border-top: 1px solid #e5e5e5; }
 .borderBottom { border-bottom: 1px solid #e5e5e5; }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  line-height: 60px;
+  /* padding-top: 1rem; */
+  background-color: #f5f5f5;
+}
+.footerLink {  
+  color: #5f6368;
+}
+.footerLink:hover {  
+  color: #5f6368;
+}

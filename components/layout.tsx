@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
+import { Container, Row, Col } from 'react-bootstrap'
 
 import styles from './layout.module.css'
 
@@ -34,17 +35,35 @@ export default function Layout({
               <Link href="/" passHref>
                 <Nav.Link>Home</Nav.Link>
               </Link>
+              <Link href="/cionlu" passHref>
+                <Nav.Link>NLU</Nav.Link>
+              </Link>
               <Link href="/services" passHref>
                 <Nav.Link>Services</Nav.Link>
               </Link>
-              <Link href="/about" passHref>
-                <Nav.Link>About</Nav.Link>
+              <Link href="/contact" passHref>
+                <Nav.Link>Contact</Nav.Link>
               </Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
         
         <main>{children}</main>
+        <footer className={styles.footer}>
+          <Container className="text-center text-md-left">
+              <Row>
+                <Col>
+                  <Link href="/about"><a className={styles.footerLink}>About</a></Link>
+                </Col>
+                <Col>
+                  <Link href="/contact"><a className={styles.footerLink}>Contact</a></Link>
+                </Col>
+                <Col>
+                  <span className="text-muted">© 2020 Copyright: <Link href="/"><a className={styles.footerLink}>ionkom.com</a></Link></span>
+                </Col>
+              </Row>
+          </Container>
+        </footer>
       </>
     )
 }

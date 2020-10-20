@@ -11,21 +11,18 @@ export default function Services() {
       </Head>
       <section>
         <ul>
-          <li>
+          {/* <li>
             <a href="https://vremea.ionkom.com" target="_blank">Weather</a>
-          </li>
+          </li> */}
           <li>
             <a href="https://cioionut.github.io/nlu-demo" target="_blank">Virtual Digital Asisstant</a>
           </li>
           <li>
-            <a href="https://cioionut.github.io/nlu-demo" target="_blank">Natural Language Understanding</a>
+            <a href="/cionlu">Natural Language Understanding</a>
           </li>
-          <li>Ionkom App</li>
+          <li>Ionkom Select</li>
         </ul>
       </section>
-      <Link href="/">
-        <a>← Back to home</a>
-      </Link>
     </Layout>
   )
 }

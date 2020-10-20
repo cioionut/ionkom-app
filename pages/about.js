@@ -15,9 +15,6 @@ export default function About() {
           help them to better understand and use technology.
         </p>
       </section>
-      <Link href="/">
-        <a>← Back to home</a>
-      </Link>
     </Layout>
   )
 }
