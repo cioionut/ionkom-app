@@ -53,17 +53,17 @@ export default function Layout({
         
         <main>{children}</main>
         <footer className={styles.footer}>
-          <Container className="text-center text-md-left">
+          <Container fluid>
               <Row>
-                <Col>
+                <Col xs='auto'>
                   <Link href="/about"><a className={styles.footerLink}>About</a></Link>
                 </Col>
-                <Col>
+                <Col xs='auto'>
                   <Link href="/contact"><a className={styles.footerLink}>Contact</a></Link>
                 </Col>
-                <Col>
+                {/* <Col xs='auto'>
                   <span className="text-muted">© 2020 Copyright: <Link href="/"><a className={styles.footerLink}>ionkom.com</a></Link></span>
-                </Col>
+                </Col> */}
               </Row>
           </Container>
         </footer>
