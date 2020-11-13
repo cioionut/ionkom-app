@@ -5,9 +5,9 @@ import { useRouter } from 'next/router'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import { Container, Row, Col } from 'react-bootstrap'
+import CookieConsent from "react-cookie-consent";
 
 import styles from './layout.module.css'
-
 
 export const siteTitle = 'ionkom'
 
@@ -61,12 +61,20 @@ export default function Layout({
                 <Col xs='auto'>
                   <Link href="/contact"><a className={styles.footerLink}>Contact</a></Link>
                 </Col>
+                <Col xs='auto'>
+                  <Link href='/policies/cookies'><a className={styles.footerLink}>Cookie Policy</a></Link>
+                </Col>
                 {/* <Col xs='auto'>
                   <span className="text-muted">© 2020 Copyright: <Link href="/"><a className={styles.footerLink}>ionkom.com</a></Link></span>
                 </Col> */}
               </Row>
           </Container>
         </footer>
+        <CookieConsent
+        >
+          We use cookies for analytics, advertising and to improve our site. You agree to our use of cookies by closing this message box or continuing to use our site. 
+          To find out more, including how to change your settings, see our <Link href='/policies/cookies'>Cookie Policy</Link>
+        </CookieConsent>
       </>
     )
 }
