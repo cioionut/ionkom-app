@@ -8,34 +8,21 @@ import React from 'react';
 
 import NLUResponse from './nluresponse'
 import styles from './nluinaction.module.css'
+import nluInitRsp from '../data/nlu_init_rsp'
 
 
 class NLUinAction extends React.Component {
   constructor(props) {
     super(props);
     this.startUtt = "please show me flights from pittsburgh to new york city on wednesday morning serving breakfast";
-    this.urlStr = 'https://cionlu.herokuapp.com/api/v1/nlu';  // 'http://localhost:5000/api/v1/nlu';
+    this.urlStr = 'https://cionlu-atis.herokuapp.com/api/v1/nlu';
+    // this.urlStr = 'http://localhost:5001/api/v1/nlu';
 
     this.handleUtteranceChange = this.handleUtteranceChange.bind(this);
     this.handleSubmitFrom = this.handleSubmitFrom.bind(this);
 
     this.state = {
-      nluResponse: {
-        "entities": [
-          {
-            "confidence_score": 0.0,
-            "end": null,
-            "entity_type": "t1",
-            "entity_value": "please wait 30 seconds until the cio-nlu server wakes up",
-            "start": null
-          }
-        ],
-        "intent": {
-            "confidence_score": 0.0,
-            "intent_type": "t1"
-        },
-        text: ""
-      }
+      nluResponse: nluInitRsp
     };
   }
 
@@ -96,31 +83,31 @@ class NLUinAction extends React.Component {
 
   render() {
     return (
-        <Container className={styles.nluContent}>
-            <Row>
-                <Col>
-                    <h5>State something</h5>
-                    <Form onSubmit={this.handleSubmitFrom}>
-                        <Form.Group>
-                            <Form.Control as="textarea" rows="3" name="utterance" id="utterance"
-                                value={this.state.utterance}
-                                onChange={this.handleUtteranceChange} 
-                                placeholder={this.startUtt} />
-                            <Button className={`float-right ${styles.submitBtn}`} color="primary" type="submit">Analyze</Button>
-                        </Form.Group>
-                    </Form>
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <h5>See Language Understanding in action</h5>
-                    <NLUResponse
-                        intent={this.state.nluResponse.intent}
-                        entities={this.state.nluResponse.entities}
-                    />
-                </Col>
-            </Row>
-        </Container>
+      <Container className={styles.nluContent}>
+          <Row>
+              <Col>
+                  <h5>State something</h5>
+                  <Form onSubmit={this.handleSubmitFrom}>
+                      <Form.Group>
+                          <Form.Control as="textarea" rows="3" name="utterance" id="utterance"
+                              value={this.state.utterance}
+                              onChange={this.handleUtteranceChange} 
+                              placeholder={this.startUtt} />
+                          <Button className={`float-right ${styles.submitBtn}`} color="primary" type="submit">Analyze</Button>
+                      </Form.Group>
+                  </Form>
+              </Col>
+          </Row>
+          <Row className="mt-3">
+              <Col>
+                  <h5>See Language Understanding in action</h5>
+                  <NLUResponse
+                      intent={this.state.nluResponse.intent}
+                      entities={this.state.nluResponse.entities}
+                  />
+              </Col>
+          </Row>
+      </Container>
     );
   }
 }

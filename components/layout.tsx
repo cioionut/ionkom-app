@@ -52,6 +52,7 @@ export default function Layout({
         </Navbar>
         
         <main>{children}</main>
+
         <footer className={styles.footer}>
           <Container fluid>
               <Row>
