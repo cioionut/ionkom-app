@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../../components/layout'
-import { Container, Row } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
+import Dialog from '../../components/dialog/dialog'
 
 
 export default function DialogSystem() {
@@ -14,6 +15,11 @@ export default function DialogSystem() {
           <h5>
             Contact: <a href="mailto:ionut.ciocoiu@ionkom.com">ionut.ciocoiu@ionkom.com</a>
           </h5>
+        </Row>
+        <Row>
+          <Col>
+            <Dialog />
+          </Col>
         </Row>
       </Container>
     </Layout>

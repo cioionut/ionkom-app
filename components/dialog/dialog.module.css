@@ -1,0 +1,16 @@
+.submitBtn {
+    border-radius: 1rem;
+    width: 5rem;
+}
+
+.messageCard {
+    max-width: 60%;
+}
+.bgLightBlue {
+    background-color:#7CC0FF;
+}
+
+.messageScroll {
+    height: 20rem;
+    overflow-y: scroll;
+}
