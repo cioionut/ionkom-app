@@ -12,13 +12,8 @@ export default function DialogSystem() {
       </Head>
       <Container>
         <Row className="justify-content-center">
-          <h5>
-            Contact: <a href="mailto:ionut.ciocoiu@ionkom.com">ionut.ciocoiu@ionkom.com</a>
-          </h5>
-        </Row>
-        <Row>
           <Col>
-            <Dialog />
+            <Dialog chatBoxTitle='Coronavirus Self-Checker' />
           </Col>
         </Row>
       </Container>

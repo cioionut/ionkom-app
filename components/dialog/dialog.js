@@ -53,7 +53,7 @@ function Message(props) {
   }
 
   let cardBody = (
-    <Card.Body>
+    <Card.Body className='p-2'>
       {bodyText}
     </Card.Body>)
 
@@ -61,23 +61,27 @@ function Message(props) {
     output.generic.forEach(outResponse => {
       if (outResponse.response_type === 'option') {
         let optionsPref = outResponse.preference;
-        let rspTitle = <Card.Title>{outResponse.title}</Card.Title>;
-        let rspSubtitle = <Card.Subtitle>{outResponse.description}</Card.Subtitle>
+        let rspTitle = <b>{outResponse.title}</b>;
+        let rspSubtitle = <span>{outResponse.description}</span>
         let options = outResponse.options.map((option, idx) => {
           return (
-            <Card.Link 
-              key={idx} 
-              onClick={() => handleOption(option)}>
-            {option.label}
-            </Card.Link>
+            <li style={{ cursor: 'pointer' }}>
+              <Card.Link
+                key={idx} 
+                onClick={() => handleOption(option)}>
+              {option.label}
+              </Card.Link>
+            </li>
           )
         })
 
         cardBody = (
-          <Card.Body>
-            {rspTitle}
+          <Card.Body className='p-2'>
+            {rspTitle} <br/>
             {rspSubtitle}
-            {options}
+            <ul>
+              {options}
+            </ul>
           </Card.Body>)
       }
     })
@@ -86,9 +90,6 @@ function Message(props) {
   return (
     <div className={`row ${isMe ? 'justify-content-end' : ''}`}>
       <div className={`card ${styles.messageCard} ${isMe ? styles.bgLightBlue: ''} m-1`}>
-          {/* <div className="card-body p-2">
-            <span className="mx-2">{bodyText}</span>
-          </div> */}
           {cardBody}
       </div>
     </div>
@@ -138,6 +139,7 @@ class MessageList extends Component {
 class Dialog extends Component {
   constructor(props) {
     super(props);
+    this.chatBoxTitle = props.chatBoxTitle || 'My Virtual Asisstant';
     this.serverNotAvailableMsg = "Incerc sa stabilesc conexiunea cu serverul de dialog, incearca te rog peste cateva momente";
     this.sessionExpiredMsg = "Din cauza inactivitatii sesiunea de dialog s-a incheiat, voi deschide o noua conversatie."
     this.restoreSessionWelcomeMsg = "Bine ai revenit! Scrie-mi daca mai ai nevoie de mine!"
@@ -302,7 +304,7 @@ class Dialog extends Component {
       <div>
         <div className="card">
             <div className="card-header">
-              <h5>My Virtual Asisstant</h5>
+              <h5>{this.chatBoxTitle}</h5>
             </div>
             <div className="card-body d-flex flex-column p-1">
                 <MessageList messages={this.state.dialog}
