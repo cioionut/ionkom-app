@@ -41,9 +41,9 @@ export default function Layout({
               <Link href="/dialog-system" passHref>
                 <Nav.Link>Dialog System</Nav.Link>
               </Link>
-              <Link href="/services" passHref>
+              {/* <Link href="/services" passHref>
                 <Nav.Link>Services</Nav.Link>
-              </Link>
+              </Link> */}
               <Link href="/contact" passHref>
                 <Nav.Link>Contact</Nav.Link>
               </Link>
