@@ -13,7 +13,7 @@ export default function DialogSystem() {
       <Container>
         <Row className="justify-content-center">
           <Col>
-            <Dialog chatBoxTitle='Coronavirus Self-Checker' />
+            <Dialog chatBoxTitle='Test Assistant' />
           </Col>
         </Row>
       </Container>

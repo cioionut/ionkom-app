@@ -57,7 +57,7 @@ function Message(props) {
       {bodyText}
     </Card.Body>)
 
-  if (!isMe) {
+  if (!isMe && 'generic' in output) {
     output.generic.forEach(outResponse => {
       if (outResponse.response_type === 'option') {
         let optionsPref = outResponse.preference;
@@ -84,7 +84,7 @@ function Message(props) {
             </ul>
           </Card.Body>)
       }
-    })
+    }) 
   }
 
   return (
@@ -141,8 +141,6 @@ class Dialog extends Component {
     super(props);
     this.chatBoxTitle = props.chatBoxTitle || 'My Virtual Asisstant';
     this.serverNotAvailableMsg = "Incerc sa stabilesc conexiunea cu serverul de dialog, incearca te rog peste cateva momente";
-    this.sessionExpiredMsg = "Din cauza inactivitatii sesiunea de dialog s-a incheiat, voi deschide o noua conversatie."
-    this.restoreSessionWelcomeMsg = "Bine ai revenit! Scrie-mi daca mai ai nevoie de mine!"
     this.stopDialogVariable = "$leg_op"
 
     this.startUtt = "...";

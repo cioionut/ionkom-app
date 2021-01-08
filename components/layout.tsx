@@ -35,8 +35,8 @@ export default function Layout({
               <Link href="/" passHref>
                 <Nav.Link>Home</Nav.Link>
               </Link>
-              <Link href="/cionlu" passHref>
-                <Nav.Link>NLU</Nav.Link>
+              <Link href="/natural-language-software" passHref>
+                <Nav.Link>Natural Language</Nav.Link>
               </Link>
               <Link href="/dialog-system" passHref>
                 <Nav.Link>Dialog System</Nav.Link>
