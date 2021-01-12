@@ -6,10 +6,22 @@ import style from './dialogsys.module.css'
 
 
 export default function DialogSystem() {
+
+  const host = process.env.NEXT_PUBLIC_DIALOGSYS_ATIS;
+  const apiUrl = `${host}/api/v1`;
+  const title = `Dialog System Software | ${siteTitle} artificial intelligence`;
+
   return (
     <Layout home>
       <Head>
-        <title>{`${siteTitle} - dialog system`}</title>
+        <title>{title}</title>
+          <meta property="og:site_name" content={title}></meta>
+          <meta property="og:title" content={`${title}`}></meta>
+          <meta property="og:url" content="https://ionkom.com/"></meta>
+          <meta
+              name="description"
+              content='Intelligent chatbot service, build dialog systems for your business, automate conversations'
+          />
       </Head>
       <Container>
         <Row>
@@ -17,7 +29,7 @@ export default function DialogSystem() {
         </Row>
         <Row>
           <Col>
-            <p className={style.textContent}>Boost your sales power with a custom digital assistant.</p>
+            <p className={style.textContent}>Boost customer experience and drive more sales.</p>
           </Col>
         </Row>
         <Row>
@@ -25,9 +37,9 @@ export default function DialogSystem() {
         </Row>
         <Row className='mt-5 pt-5'>
           <Col md={6} sm={12}>
-            <h2>Automate tedious processes </h2>
+            <h2>Automate conversations </h2>
             <p className={style.textContent}>Dialog System software use artificial intelligence 
-            to capture people requests and based on embedded dialog knowledge tries to guide users to the most relevant resources of your business.
+            to better understand customers requests and based on embedded dialog knowledge tries to guide users to the most relevant resources of your business.
             </p>
           </Col>
           <Col md={6} sm={12}>
@@ -60,7 +72,7 @@ export default function DialogSystem() {
         </Row>
         <Row>
           <Col>
-            <Dialog chatBoxTitle='Flight Assistant' />
+            <Dialog chatBoxTitle='Flight Assistant' apiUrl={apiUrl}/>
           </Col>
         </Row>
       </Container>

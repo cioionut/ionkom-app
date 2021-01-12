@@ -5,12 +5,14 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap'
 
 
 export default function Home() {
+  const title = `Ionkom - Connect with friends and explore outside real world`;
+
   return (
     <Layout home>
       <Head>
-        <title>{siteTitle}</title>
+        <title>{title}</title>
         <meta property="og:site_name" content={siteTitle}></meta>
-        <meta property="og:title" content={`${siteTitle}`}></meta>
+        <meta property="og:title" content={`${title}`}></meta>
         <meta property="og:url" content="https://www.ionkom.com/"></meta>
         <meta
             name="description"

@@ -4,10 +4,19 @@ import Layout, { siteTitle } from '../components/layout'
 
 
 export default function About() {
+  const title = `Ionkom - about us and our mission`
   return (
     <Layout home>
       <Head>
-        <title>{`${siteTitle} - about us and our mission`}</title>
+        <title>{title}</title>
+        <meta property="og:site_name" content={siteTitle}></meta>
+        <meta property="og:title" content={`${title}`}></meta>
+        <meta property="og:url" content="https://www.ionkom.com/"></meta>
+        <meta
+            name="description"
+            content="Our mission is to create more free time for humans and
+            help them to better understand and use technology."
+        />
       </Head>
       <section className="container">
         <p style={{ fontSize: 21 }}>

@@ -7,9 +7,7 @@ const srvNotAvailableMsg = 'Server not available';
 
 function Message(props) {
   // todo: use next public env vars
-  let host = 'http://0.0.0.0:5000';
-  let apiUrl = `${host}/api/v1`;
-
+  const apiUrl = props.apiUrl;
   const output = props.output;
   const isMe = props.isMe;
   const bodyText = isMe ? output : output.text_template;
@@ -105,12 +103,16 @@ class MessageList extends Component {
     this.messagesEnd.scrollIntoView({ behavior: "smooth" });
   }
   
-  componentDidMount() {
-    this.scrollToBottom();
-  }
+  // // not necessary
+  // componentDidMount() {
+  //   this.scrollToBottom();
+  // }
   
   componentDidUpdate() {
-    this.scrollToBottom();
+    // avoid main page scroll
+    // verify if more than one messages exists before scroll
+    if (this.props.messages && this.props.messages.length > 1)
+      this.scrollToBottom();
   }
 
   render() {
@@ -122,6 +124,7 @@ class MessageList extends Component {
         handleDialogChange={this.props.handleDialogChange}
         handleResponse={this.props.handleResponse}
         dialogState={this.props.dialogState}
+        apiUrl={this.props.apiUrl}
         key={idx}/>
     );
     return (
@@ -139,14 +142,12 @@ class MessageList extends Component {
 class Dialog extends Component {
   constructor(props) {
     super(props);
+    this.apiUrl = props.apiUrl;
     this.chatBoxTitle = props.chatBoxTitle || 'My Virtual Asisstant';
     this.serverNotAvailableMsg = "Incerc sa stabilesc conexiunea cu serverul de dialog, incearca te rog peste cateva momente";
     this.stopDialogVariable = "$leg_op"
 
     this.startUtt = "...";
-    let host = 'http://0.0.0.0:5000';
-    // let host = 'https://cio-dialogsys.herokuapp.com';
-    this.apiUrl = `${host}/api/v1`;
     this.handleUtteranceChange = this.handleUtteranceChange.bind(this);
     this.handleSubmitForm = this.handleSubmitForm.bind(this);
     this.handleResponse = this.handleResponse.bind(this);
@@ -309,6 +310,7 @@ class Dialog extends Component {
                   handleDialogChange={this.handleDialogChange}
                   handleResponse={this.handleResponse}
                   dialogState={this.state.apiResponse.dialog_state}
+                  apiUrl={this.apiUrl}
                 />
                 <form onSubmit={this.handleSubmitForm} className="mt-3 p-1">
                   <div className="input-group">

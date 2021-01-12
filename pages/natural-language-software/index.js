@@ -7,10 +7,19 @@ import style from './nlu.module.css'
 
 
 export default function NLUPage() {
+  const title = `Natural Language Understanding | ${siteTitle} artificial intelligence`;
   return (
     <Layout home>
         <Head>
-            <title>{`${siteTitle} - Natural Language Understanding`}</title>
+          <title>{title}</title>
+          <meta property="og:site_name" content={title}></meta>
+          <meta property="og:title" content={`${title}`}></meta>
+          <meta property="og:url" content="https://ionkom.com/"></meta>
+          <meta
+              name="description"
+              content='Natural Language software uses machine learning to predict text insights like user intention and domain specific entities.
+              You can extract information about people, places, and events and use them to better understand customer conversations.'
+          />
         </Head>
         <Container>
           <Row>
