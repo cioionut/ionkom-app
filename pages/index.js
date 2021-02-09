@@ -22,27 +22,27 @@ export default function Home() {
 
       <Container>
         <Row>
-          <Col>
+          <Col sm={6}>
             <h1>Connect with friends and explore outside real world</h1>
             <p style={{color: '#5f6368'}}>In person meetings are the ultimate goal, share your skills and let our network to shape your personal brand.</p>
           </Col>
           <Col>
             <Form>
               <Form.Group controlId="formBasicEmail">
-                <Form.Label>Email address</Form.Label>
+                <Form.Label>Join Ionkom Today</Form.Label>
                 <Form.Control type="email" placeholder="Enter email" />
                 <Form.Text className="text-muted">
                   We'll never share your email with anyone else.
                 </Form.Text>
               </Form.Group>
 
-              <Form.Group controlId="formBasicPassword">
+              {/* <Form.Group controlId="formBasicPassword">
                 <Form.Label>Password</Form.Label>
                 <Form.Control type="password" placeholder="Password" />
-              </Form.Group>
-              <Form.Group controlId="formBasicCheckbox">
+              </Form.Group> */}
+              {/* <Form.Group controlId="formBasicCheckbox">
                 <Form.Check type="checkbox" label="Check me out" />
-              </Form.Group>
+              </Form.Group> */}
               <Button variant="primary" type="submit">
                 Submit
               </Button>
@@ -52,9 +52,23 @@ export default function Home() {
         <hr/>
         <Row className="mt-3 p-1">
           <Col>
-            <p>If you already represent a business see our Natural Language Software: 
-               <Link href='/natural-language-software'> Text Understanding</Link> and 
-               <Link href='/dialog-system'> Dialog Systems</Link>.</p>
+            <h2>Helpful products for everyone</h2>
+            <p>
+              As our mission states we want to make more free time for our users, to achive that we offer for free a lot of helpful tools.
+              Explore all products
+            </p>            
+            <h4>Office Suite</h4>
+            <p>
+              Read text from images - Free OCR (Optical Character Recognition) - <Link href='/visual-ai'>Get Product</Link>
+            </p>
+            <h4>Text Understanding</h4>
+            <p>
+              Extract semantic entities like locations, persons, events - Free NLU (Natural Language Understanding) - <Link href='/natural-language-software'>Get Product</Link>
+            </p>
+            <h4>Digital Assistants</h4>
+            <p>
+              Demo Flight assistent - <Link href='/dialog-system'>Get Product</Link>
+            </p>
           </Col>
         </Row>
       </Container>

@@ -10,6 +10,7 @@ import CookieConsent from "react-cookie-consent";
 import styles from './layout.module.css'
 
 export const siteTitle = 'Ionkom'
+export const _siteTitle = 'ionkom'
 
 export default function Layout({
     children,
@@ -25,9 +26,9 @@ export default function Layout({
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <Navbar collapseOnSelect bg="white" expand="lg" className={`align-items-center p-3 px-md-4 mb-3 ${styles.borderBottom} ${styles.boxShadow}`}>
+        <Navbar collapseOnSelect bg="white" expand="lg" className={`align-items-center p-3 px-md-4 mb-3 ${styles.mainNavBar}`}>
           <Link href="/" passHref>
-            <Navbar.Brand className={styles.logoFont}>{siteTitle}</Navbar.Brand>
+            <Navbar.Brand className={styles.logoFont}>{_siteTitle}</Navbar.Brand>
           </Link>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
