@@ -9,7 +9,7 @@ import CookieConsent from "react-cookie-consent";
 
 import styles from './layout.module.css'
 
-export const siteTitle = 'ionkom'
+export const siteTitle = 'Ionkom'
 
 export default function Layout({
     children,
@@ -41,9 +41,9 @@ export default function Layout({
               <Link href="/dialog-system" passHref>
                 <Nav.Link>Dialog System</Nav.Link>
               </Link>
-              {/* <Link href="/services" passHref>
-                <Nav.Link>Services</Nav.Link>
-              </Link> */}
+              <Link href="/visual-ai" passHref>
+                <Nav.Link>Visual AI</Nav.Link>
+              </Link>
               <Link href="/contact" passHref>
                 <Nav.Link>Contact</Nav.Link>
               </Link>
