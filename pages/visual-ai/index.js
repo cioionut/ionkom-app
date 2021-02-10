@@ -84,14 +84,14 @@ export default function DialogSystem() {
                         {/* <li>Monthly updates</li>
                         <li>Free cancelation</li> */}
                     </ul>
-                    <Button className='mb-3' variant='outline-secondary' href="https://rapidapi.com/ionkom/api/ocr14/endpoints" target="_blank" >Order Now</Button>
+                    <Button className='mb-3' variant='outline-primary' href="https://rapidapi.com/ionkom/api/ocr14/endpoints" target="_blank" >Order Now</Button>
                     {/* <button type="button" class="btn btn-outline-secondary mb-3">Order now</button> */}
                 </div>
             </div>
-            <div class="card card-pricing popular shadow text-center px-2 mb-4">
+            <div class="card card-pricing text-center px-2 mb-4">
                 <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Professional</span>
                 <div class="bg-transparent card-header pt-4 border-0">
-                    <h1 class="h1 font-weight-normal text-primary text-center">$<span class="price">24,98</span><span class="h6 text-muted ml-2">/ month</span></h1>
+                    <h1 class="h1 font-weight-normal text-primary text-center">$<span class="price">14.95</span><span class="h6 text-muted ml-2">/ month</span></h1>
                     <p className={`bg-transparent ${style.textContent} `}>For professionals who require more volume for their application</p>
                 </div>
                 <div class="card-body pt-0">
@@ -99,14 +99,14 @@ export default function DialogSystem() {
                         <li><b>2500 / month quota</b></li>
                         <li className={style.textContent}>+ ($0.050 USD/extra req)</li>
                     </ul>
-                    <Button className='mb-3' variant='primary' href="https://rapidapi.com/ionkom/api/ocr14/endpoints" target="_blank" >Order Now</Button>
+                    <Button className='mb-3' variant='outline-primary' href="https://rapidapi.com/ionkom/api/ocr14/endpoints" target="_blank" >Order Now</Button>
                     
                 </div>
             </div>
-            <div class="card card-pricing text-center px-2 mb-4">
+            <div class="card card-pricing popular shadow text-center px-2 mb-4">
                 <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Business</span>
                 <div class="bg-transparent card-header pt-4 border-0">
-                    <h1 class="h1 font-weight-normal text-primary text-center">$<span class="price">99,98</span><span class="h6 text-muted ml-2">/ month</span></h1>
+                    <h1 class="h1 font-weight-normal text-primary text-center">$<span class="price">49.95</span><span class="h6 text-muted ml-2">/ month</span></h1>
                     <p className={`bg-transparent ${style.textContent} `}>For professionals who work on larger scale applications</p>
                 </div>
                 <div class="card-body pt-0">
@@ -114,21 +114,21 @@ export default function DialogSystem() {
                       <li><b>10000 / month quota</b></li>
                       <li className={style.textContent}>+ ($0.040 USD/extra req)</li>
                     </ul>
-                    <Button className='mb-3' variant='outline-secondary' href="https://rapidapi.com/ionkom/api/ocr14/endpoints" target="_blank" >Order Now</Button>                    
+                    <Button className='mb-3' variant='primary' href="https://rapidapi.com/ionkom/api/ocr14/endpoints" target="_blank" >Order Now</Button>                    
                 </div>
             </div>
             <div class="card card-pricing text-center px-2 mb-4">
                 <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Enterprise</span>
                 <div class="bg-transparent card-header pt-4 px-2 border-0">
-                    <h1 class="h1 font-weight-normal text-primary text-center" data-pricing-value="60">$<span class="price">269,98</span><span class="h6 text-muted ml-2">/ month</span></h1>
+                    <h1 class="h1 font-weight-normal text-primary text-center" data-pricing-value="60">$<span class="price">149.95</span><span class="h6 text-muted ml-2">/ month</span></h1>
                     <p className={`bg-transparent ${style.textContent} `}>For businesses who need high volume, production-level use</p>
                 </div>
                 <div class="card-body pt-0">
                   <ul class="list-unstyled mb-4">
-                    <li><b>30000 / month quota</b></li>
+                    <li><b>50000 / month quota</b></li>
                     <li className={style.textContent}>+ ($0.030 USD/extra req)</li>
                   </ul>
-                  <Button className='mb-3' variant='outline-secondary' href="https://rapidapi.com/ionkom/api/ocr14/endpoints" target="_blank" >Order Now</Button>                    
+                  <Button className='mb-3' variant='outline-primary' href="https://rapidapi.com/ionkom/api/ocr14/endpoints" target="_blank" >Order Now</Button>                    
                 </div>
             </div>
           </div>

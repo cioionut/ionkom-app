@@ -21,8 +21,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media only screen and (min-width: 960px) {
   .navbar .navbar-nav .active::after {
-    border-bottom: 2px solid #619ed6;
-    bottom: -15px;
+    border-bottom: 2px solid #0081fa;
+    bottom: -1.3rem;
     content: " ";
     left: 0;
     position: absolute;

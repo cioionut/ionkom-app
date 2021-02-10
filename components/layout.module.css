@@ -8,7 +8,7 @@
 .mainNavBar {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
   border-top: 1px solid #e5e5e5;
-  /* border-bottom: 1px solid #e5e5e5; */
+  border-bottom: 1px solid #e5e5e5;
 
   font-family: 'Roboto', 'Noto Sans', sans-serif;
   font-weight: 450;
