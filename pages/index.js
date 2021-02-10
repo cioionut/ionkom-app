@@ -57,18 +57,18 @@ export default function Home() {
               While you are outside with friends, let us do the boring tasks for you. As our mission states we want to make more free time for our users, to achive that we offer for free a lot of helpful tools.
               Explore all products bellow.
             </p>
-            <img
+            {/* <img
               src='/img/zachary-nelson-98Elr-LIvD8-unsplash.jpg'
               alt='happy people outside'
               width='100%'
-            />
+            /> */}
           </Col>
         </Row>
         <hr/>
         <Row className="mt-3 p-1">
           <Col sm={7}>
-            <h3>Woooho! What's the rush?</h3>
-            <p style={{color: '#5f6368'}}>Before to jump into the tech zoo, check the <a href='https://vremea.ionkom.com/' target="_blank">weather</a> to see if you really need to rush</p>
+            <h3>Weather</h3>
+            <p style={{color: '#5f6368'}}>A scientific yet simple approach to weather forecast</p>
             <p>
               Ionkom Weather presents:
               <ul>
