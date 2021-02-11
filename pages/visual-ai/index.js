@@ -1,14 +1,14 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../../components/layout'
-import { Container, Row, Col, Button, Card } from 'react-bootstrap'
+import { Container, Row, Col, Button, Card, Table } from 'react-bootstrap'
 import style from './ocr.module.css'
+import ocrSupportedLanguages from '../../data/ocr_supported_languages'
+import Link from 'next/link'
 
 
-export default function DialogSystem() {
+export default function VisualAI() {
 
-  const host = process.env.NEXT_PUBLIC_DIALOGSYS_ATIS;
-  const apiUrl = `${host}/api/v1`;
-  const title = `Visual AI - Read Images using ML | ${siteTitle} artificial intelligence`;
+  const title = `Read Images using ML | ${siteTitle} Visual AI`;
 
   return (
     <Layout home>
@@ -19,7 +19,7 @@ export default function DialogSystem() {
           <meta property="og:url" content="https://ionkom.com/"></meta>
           <meta
               name="description"
-              content='Intelligent chatbot service, build dialog systems for your business, automate conversations'
+              content='Optical Character Recognition (OCR) can recognize and extract text from images. Fast deep learning models are ready to capture data from documents instantly. Reduce turn around times and the manual entry effort required.'
           />
       </Head>
       <Container>
@@ -36,40 +36,72 @@ export default function DialogSystem() {
           <Col><Button href="https://rapidapi.com/ionkom/api/ocr14/endpoints" target="_blank" >Try it for free</Button></Col>
         </Row>
         <Row className='mt-5 pt-5'>
-          <Col md={8} sm={12} style={{backgroundColor: '#f3f4f4'}}>
-            <h2>Detect text in images</h2>
-            <p className={style.textContent}>Optical Character Recognition (OCR) can recognize and extract text from images. Our solution can help you to automate text detection in documents.</p>
+          <Col sm={8}>
+            <h2>Digitize and understand text from images</h2>
+            <p className={style.textContent}>
+              Optical Character Recognition (OCR) can recognize and extract text from images.
+              Fast deep learning models are ready to capture data from documents instantly. Reduce turn around times and the manual entry effort required.
+            </p>
+            <p className={style.textContent}>
+              Available OCR Services
+              <ul>
+                <li>Document Reading</li>
+                <li>Arbitrary text reading - coming soon</li>
+                <li>Id card OCR - road map</li>
+                <li>Invoice, bill/Key-value OCR - road map</li>
+              </ul>
+            </p>
           </Col>
-          <Col md={4} sm={12}>
+          <Col sm={4}>
             <img
-              src='/img/shutter-2008487_1280.png'
-              alt='lens vision'
+              src='/img/ocr_ilustration.jpg'
+              alt='computer vision'
               width='300px'
             />
           </Col>
         </Row>
         <Row className='mt-3 pt-3'>
           <Col md={4} sm={12}>
-            <h3>Text Detection</h3>
-            <p className={style.textContent}>Recognize and extract text from any image.</p>
+            <h3>Read Arbitrary Text</h3>
+            <p className={style.textContent}>Recognize and extract text from any image, such as photos of license plates, street sign, traffic sign or any other objects with serial numbers.</p>
           </Col>
           <Col md={4} sm={12}>
-            <h3>Document Text Detection</h3>
-            <p className={style.textContent}>Extracts text from an image, but the vision model is optimized for dense text and documents.</p>
+            <h3>Read Documents</h3>
+            <p className={style.textContent}>Extracts text from photos of documents - id cards, invoices, bills, financial reports, articles, and more. The vision model is optimized for dense text and semi-structured data.</p>
           </Col>
           <Col md={4} sm={12}>
             <h3>Industry-leading accuracy</h3>
             <p className={style.textContent}>Our computer vision collection have the most new and performant machine learning models.</p>
           </Col>
         </Row>
-        <hr/>
-        <Row className="justify-content-center">
+        <Row className="justify-content-center mb-3">
           <Col xs='auto'>
-            <h1>Pricing</h1>
+            <h4><a href="https://rapidapi.com/ionkom/api/ocr14/endpoints" target="_blank" >Try the API</a></h4>
+          </Col>
+        </Row>
+        <hr/>
+        <Row className="justify-content-center mb-3">
+          <Col xs='auto'>
+            <h2>Competitive Advantage</h2>
+          </Col>
+        </Row>
+        <Row className="justify-content-center mb-3">
+          <Col xs='auto'>
+          <p className={style.textContent}>
+              OCR API uses machine learning to detect text within images in more than 80 languages and various file types.
+              Take advantage and automate manual data entry in your organization.
+              The first step to digitalization era begins with Document Understanding AI, which lets you process millions of documents quickly and automate business workflows.
+            </p>
+          </Col>
+        </Row>
+        <hr/>
+        <Row className="justify-content-center mb-3">
+          <Col xs='auto'>
+            <h2>Pricing</h2>
           </Col>
         </Row>
         <Row>
-        <div class="container mb-5 mt-5">
+          <Container>
           <div class="pricing card-deck flex-column flex-md-row mb-3">
             <div class="card card-pricing text-center px-2 mb-4">
                 <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Starter</span>
@@ -132,7 +164,39 @@ export default function DialogSystem() {
                 </div>
             </div>
           </div>
-        </div>
+        </Container>
+        </Row>
+        <Row className="justify-content-center mb-3">
+          <Col xs='auto'>
+            <h2>Language support</h2>
+          </Col>
+        </Row>
+        <Row className="justify-content-center mb-3">
+          <Col xs='auto'>
+            <p>
+              Computer Vision's OCR APIs support several languages. 
+              They require you to specify a language code.
+            </p>
+            <Table striped bordered hover>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Language</th>
+                  <th>Lang. Code</th>
+                </tr>
+              </thead>
+              <tbody>
+                {ocrSupportedLanguages.map((lang, idx) => {
+                    return (
+                    <tr scope="row" key={idx}>
+                      <td>{idx+1}</td>
+                      <td>{lang.language}</td>
+                      <td>{lang.langCode}</td>
+                    </tr>)
+                  })}
+              </tbody>
+            </Table>
+          </Col>
         </Row>
       </Container>
     </Layout>

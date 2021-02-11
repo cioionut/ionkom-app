@@ -119,7 +119,10 @@ export default function Home() {
         <Row className="mt-3 p-1">
           <Col sm={7}>
             <h2>Visual AI Reading</h2>
-            <p style={{color: '#5f6368'}}>Optical Character Recognition (OCR) can recognize and extract text from images. Our solution can help you to automate text detection in documents.</p>
+            <p style={{color: '#5f6368'}}>
+              Optical Character Recognition (OCR) can recognize and extract text from images.
+              Fast deep learning models are ready to capture data from documents instantly. Reduce turn around times and the manual entry effort required.
+            </p>
             <ul>
               <li>
                 Read text from images - Free OCR (Optical Character Recognition) - <Link href='/visual-ai'>Get Product</Link>
@@ -134,7 +137,7 @@ export default function Home() {
           </Col>
           <Col sm={5}>
             <img
-              src='/img/Wavy_Tech-09_Single-01.jpg'
+              src='/img/ocr_ilustration.jpg'
               alt='computer vision'
               width='300px'
             />
