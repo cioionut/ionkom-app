@@ -68,7 +68,7 @@ export default function Home() {
         <Row className="mt-3 p-1">
           <Col sm={7}>
             <h3>Weather</h3>
-            <p style={{color: '#5f6368'}}>A scientific yet simple approach to weather forecast</p>
+            <p style={{color: '#5f6368'}}>Precise weather forecast using artificial intelligence.</p>
             <p>
               Ionkom Weather presents:
               <ul>
@@ -84,7 +84,7 @@ export default function Home() {
           </Col>
           <Col sm={5}>
             <img
-              src='/img/meteorology_ilustration.jpg'
+              src='/img/meteorology_ilustration.png'
               alt='meteorology ilustration'
               width='300px'
             />
@@ -94,7 +94,7 @@ export default function Home() {
         <Row className="mt-3 p-1">
           <Col sm={5}>
             <img
-              src='/img/Wavy_Tech-12_Single-03.jpg'
+              src='/img/chatbot_ilustration.png'
               alt='chatbot'
               width='300px'
             />
@@ -137,7 +137,7 @@ export default function Home() {
           </Col>
           <Col sm={5}>
             <img
-              src='/img/ocr_ilustration.jpg'
+              src='/img/ocr_ilustration.png'
               alt='computer vision'
               width='300px'
             />
@@ -147,7 +147,7 @@ export default function Home() {
         <Row className="mt-3 p-1">
           <Col sm={5}>
             <img
-              src='/img/tech_people_concept_ilustration.jpg'
+              src='/img/tech_people_concept_ilustration.png'
               alt='tech people concept ilustration'
               width='300px'
             />
