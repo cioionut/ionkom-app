@@ -69,18 +69,16 @@ export default function Home() {
           <Col sm={7}>
             <h3>Weather</h3>
             <p style={{color: '#5f6368'}}>Precise weather forecast using artificial intelligence.</p>
-            <p>
-              Ionkom Weather presents:
-              <ul>
-                <li>
-                  Current weather conditions wherever you are now, using your device's location or IP geolocation
-                </li>
-                <li>
-                  Discover meteorologyc conditions for specific places (country/city) - RO only, comming soon: USA, UK, Germany, France, Italy
-                </li>
-              </ul>
-              <a href='https://vremea.ionkom.com/' target="_blank">Explore Ionkom Weather App</a>
-            </p>
+            Ionkom Weather presents:
+            <ul>
+              <li>
+                Current weather conditions wherever you are now, using your device's location or IP geolocation
+              </li>
+              <li>
+                Discover meteorologyc conditions for specific places (country/city) - RO only, comming soon: USA, UK, Germany, France, Italy
+              </li>
+            </ul>
+            <a href='https://vremea.ionkom.com/' target="_blank">Explore Ionkom Weather App</a>
           </Col>
           <Col sm={5}>
             <img
