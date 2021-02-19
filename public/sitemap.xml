@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+      <urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
+      http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+      xmlns:xhtml="http://www.w3.org/1999/xhtml">
+      
+	<url>
+		<loc>https://ionkom.com/about</loc>
+		<lastmod>2021-02-19</lastmod>
+	</url>
+
+	<url>
+		<loc>https://ionkom.com/contact</loc>
+		<lastmod>2021-02-19</lastmod>
+	</url>
+
+	<url>
+		<loc>https://ionkom.com/dialog-system</loc>
+		<lastmod>2021-02-19</lastmod>
+	</url>
+
+	<url>
+		<loc>https://ionkom.com</loc>
+		<lastmod>2021-02-19</lastmod>
+	</url>
+
+	<url>
+		<loc>https://ionkom.com/natural-language-software</loc>
+		<lastmod>2021-02-19</lastmod>
+	</url>
+
+	<url>
+		<loc>https://ionkom.com/policies/cookies</loc>
+		<lastmod>2021-02-19</lastmod>
+	</url>
+
+	<url>
+		<loc>https://ionkom.com/visual-ai</loc>
+		<lastmod>2021-02-19</lastmod>
+	</url>
+</urlset>
