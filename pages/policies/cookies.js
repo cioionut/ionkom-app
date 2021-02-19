@@ -5,10 +5,19 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 
 export default function Cookies() {
+  const pageTitle = `Cookie Policy | Ionkom`;
   return (
     <Layout home>
       <Head>
-        <title>{`Cookie Policy | Ionkom`}</title>
+        <title>{pageTitle}</title>
+        <meta property="og:site_name" content={siteTitle}></meta>
+        <meta property="og:title" content={`${title}`}></meta>
+        <meta property="og:url" content="https://www.ionkom.com/"></meta>
+        <meta
+            name="description"
+            content="Learn more about Ionkom's privacy policy and practices, including what types of info Ionkom receives and how info is used and shared."
+        />                
+        <link rel="canonical" href={ currentUrl } key="canonical" />
       </Head>
       <Container>
         <Row className="justify-content-center">

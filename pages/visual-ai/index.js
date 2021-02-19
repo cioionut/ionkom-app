@@ -6,7 +6,7 @@ import ocrSupportedLanguages from '../../data/ocr_supported_languages'
 // import Link from 'next/link';
 
 
-export default function VisualAI() {
+export default function VisualAI({ currentUrl }) {
 
   const title = `Read Images using ML | ${siteTitle} Visual AI`;
 
@@ -21,6 +21,7 @@ export default function VisualAI() {
             name="description"
             content='Optical Character Recognition (OCR) can recognize and extract text from images. Fast deep learning models are ready to capture data from documents instantly. Reduce turn around times and the manual entry effort required.'
         />
+        <link rel="canonical" href={ currentUrl } key="canonical" />
       </Head>
       <Container>
         <Row>

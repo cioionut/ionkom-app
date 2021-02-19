@@ -4,7 +4,7 @@ import Layout, { siteTitle } from '../components/layout'
 import { Container, Row, Col, Form, Button } from 'react-bootstrap'
 
 
-export default function Home() {
+export default function Home({ currentUrl }) {
   const title = `Ionkom - Connect with friends and explore outside real world`;
 
   return (
@@ -17,7 +17,8 @@ export default function Home() {
         <meta
             name="description"
             content="Learn how to become more productive and share your skills. Ionkom provides many useful online services that makes your life easier"
-        />
+        />                
+        <link rel="canonical" href={ currentUrl } key="canonical" />
       </Head>
 
       <Container>

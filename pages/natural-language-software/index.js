@@ -6,7 +6,7 @@ import { Container, Row, Col, Button } from 'react-bootstrap'
 import style from './nlu.module.css'
 
 
-export default function NLUPage() {
+export default function NLUPage({ currentUrl }) {
   const title = `Natural Language Understanding | ${siteTitle} artificial intelligence`;
   return (
     <Layout home>
@@ -20,6 +20,7 @@ export default function NLUPage() {
               content='Natural Language software uses machine learning to predict text insights like user intention and domain specific entities.
               You can extract information about people, places, and events and use them to better understand customer conversations.'
           />
+          <link rel="canonical" href={ currentUrl } key="canonical" />
         </Head>
         <Container>
           <Row>

@@ -5,7 +5,7 @@ import Dialog from '../../components/dialog/dialog'
 import style from './dialogsys.module.css'
 
 
-export default function DialogSystem() {
+export default function DialogSystem({ currentUrl }) {
 
   const host = process.env.NEXT_PUBLIC_DIALOGSYS_ATIS;
   const apiUrl = `${host}/api/v1`;
@@ -22,6 +22,7 @@ export default function DialogSystem() {
               name="description"
               content='Intelligent chatbot service, build dialog systems for your business, automate conversations'
           />
+          <link rel="canonical" href={ currentUrl } key="canonical" />
       </Head>
       <Container>
         <Row>

@@ -1,14 +1,10 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 import { GA_TRACKING_ID } from '../lib/gtag';
-import { isBrowser } from '../lib/utils';
 
 
 class MyDocument extends Document {
   render() {
-    // client side using window undefinde condition
-    const currentUrl = isBrowser() ? window.location.href : null;
-
     return (
       <Html>
         <Head>
@@ -31,9 +27,6 @@ class MyDocument extends Document {
           `,
             }}
           />
-        
-          {/* remove this if you want per page canonical url and use _app.js to pass currentUrl for all pages and rewrite if needed */}
-          <link rel="canonical" href={ currentUrl } key="canonical" />
         </Head>
         <body>
           <Main />

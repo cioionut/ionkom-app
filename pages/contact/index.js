@@ -4,7 +4,7 @@ import Layout, { siteTitle } from '../../components/layout'
 import { Container, Row, Col } from 'react-bootstrap'
 
 
-export default function Contact() {
+export default function Contact({ currentUrl }) {
   const title = `Ionkom - contact page`;
 
   return (
@@ -18,6 +18,7 @@ export default function Contact() {
             name="description"
             content="Get in touch"
         />
+        <link rel="canonical" href={ currentUrl } key="canonical" />
       </Head>
       <Container>
         <Row className="justify-content-center">

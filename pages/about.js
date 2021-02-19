@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 
 
-export default function About() {
+export default function About({ currentUrl }) {
   const title = `Ionkom - about us and our mission`
   return (
     <Layout home>
@@ -17,6 +17,7 @@ export default function About() {
             content="Our mission is to create more free time for humans and
             help them to better understand and use technology."
         />
+        <link rel="canonical" href={ currentUrl } key="canonical" />
       </Head>
       <section className="container">
         <p style={{ fontSize: 21 }}>
