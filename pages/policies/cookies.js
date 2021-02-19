@@ -1,17 +1,17 @@
 import Head from 'next/head'
-import Link from 'next/link'
+// import Link from 'next/link'
 import Layout, { siteTitle } from '../../components/layout'
 import { Container, Row, Col } from 'react-bootstrap'
 
 
-export default function Cookies() {
+export default function Cookies({ currentUrl }) {
   const pageTitle = `Cookie Policy | Ionkom`;
   return (
     <Layout home>
       <Head>
         <title>{pageTitle}</title>
         <meta property="og:site_name" content={siteTitle}></meta>
-        <meta property="og:title" content={`${title}`}></meta>
+        <meta property="og:title" content={`${pageTitle}`}></meta>
         <meta property="og:url" content="https://www.ionkom.com/"></meta>
         <meta
             name="description"
