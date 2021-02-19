@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://www.ionkom.com/sitemap.xml
