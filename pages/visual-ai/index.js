@@ -55,7 +55,7 @@ export default function VisualAI({ currentUrl }) {
           </Col>
           <Col sm={4}>
             <img
-              src='/img/ocr_ilustration.png'
+              src='/img/ocr_ilustration.webp'
               alt='computer vision'
               width='300px'
             />

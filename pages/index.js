@@ -79,11 +79,11 @@ export default function Home({ currentUrl }) {
                 Discover meteorologyc conditions for specific places (country/city) - RO only, comming soon: USA, UK, Germany, France, Italy
               </li>
             </ul>
-            <a href='https://vremea.ionkom.com/' target="_blank">Explore Ionkom Weather App</a>
+            <a href='https://vremea.ionkom.com/' target="_blank" rel="noopener">Explore Ionkom Weather App</a>
           </Col>
           <Col sm={5}>
             <img
-              src='/img/meteorology_ilustration.png'
+              src='/img/meteorology_ilustration.webp'
               alt='meteorology ilustration'
               width='300px'
             />
@@ -93,7 +93,7 @@ export default function Home({ currentUrl }) {
         <Row className="mt-3 p-1">
           <Col sm={5}>
             <img
-              src='/img/chatbot_ilustration.png'
+              src='/img/chatbot_ilustration.webp'
               alt='chatbot'
               width='300px'
             />
@@ -138,7 +138,7 @@ export default function Home({ currentUrl }) {
           </Col>
           <Col sm={5}>
             <img
-              src='/img/ocr_ilustration.png'
+              src='/img/ocr_ilustration.webp'
               alt='computer vision'
               width='300px'
             />
@@ -148,7 +148,7 @@ export default function Home({ currentUrl }) {
         <Row className="mt-3 p-1">
           <Col sm={5}>
             <img
-              src='/img/tech_people_concept_ilustration.png'
+              src='/img/tech_people_concept_ilustration.webp'
               alt='tech people concept ilustration'
               width='300px'
             />
