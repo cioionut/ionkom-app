@@ -100,7 +100,9 @@ export default function Home({ currentUrl }) {
           </Col>
           <Col sm={7}>
             <h2>Chatbot and Text Understanding</h2>
-            <p style={{color: '#5f6368'}}>24/7 service</p>
+            <p style={{color: '#5f6368'}}>
+              AI models designed to identify valuable information in conversations, Natural Language Understanding (NLU) interprets user goals (intents) and derive valuable information from sentences (entities).
+            </p>
             <ul>
               <li>
                 Extract semantic entities like locations, persons, events - Free NLU (Natural Language Understanding) - <Link href='/natural-language-software'>Get Product</Link>

@@ -85,7 +85,7 @@ class NLUinAction extends React.Component {
     return (
       <Container className={styles.nluContent}>
           <Row className='justify-content-center'>
-            <Col xs='auto'><h1>Natural Language API demo</h1></Col>
+            <Col xs='auto'><h3>Natural Language API demo</h3></Col>
           </Row>
           <Row>
               <Col>
