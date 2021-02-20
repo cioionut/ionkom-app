@@ -103,7 +103,7 @@ class NLUinAction extends React.Component {
           </Row>
           <Row className="mt-3">
               <Col>
-                  <h5>See Language Understanding in action</h5>
+                  <h5 id='nluInAction'>See Language Understanding in action</h5>
                   <NLUResponse
                       intent={this.state.nluResponse.intent}
                       entities={this.state.nluResponse.entities}

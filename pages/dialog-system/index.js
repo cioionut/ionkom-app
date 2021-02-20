@@ -34,7 +34,7 @@ export default function DialogSystem({ currentUrl }) {
           </Col>
         </Row>
         <Row>
-          <Col><Button>Try it for free</Button></Col>
+          <Col><Button href='#dialogSysInAction'>Try it for free</Button></Col>
         </Row>
         <Row className='mt-5 pt-5'>
           <Col md={6} sm={12}>
@@ -68,7 +68,7 @@ export default function DialogSystem({ currentUrl }) {
         <hr/>
         <Row className="justify-content-center">
           <Col xs='auto'>
-            <h1>Chatbot API demo</h1>
+            <h1 id="dialogSysInAction">Chatbot API demo</h1>
           </Col>
         </Row>
         <Row>

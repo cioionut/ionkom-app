@@ -1,13 +1,13 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import Layout, { siteTitle } from '../../components/layout'
-import NLUinAction from '../../components/nluinaction'
-import { Container, Row, Col, Button } from 'react-bootstrap'
-import style from './nlu.module.css'
+import Head from 'next/head';
+// import Link from 'next/link'
+import Layout, { siteTitle } from '../../components/layout';
+import NLUinAction from '../../components/nluinaction';
+import { Container, Row, Col, Button } from 'react-bootstrap';
+import style from './nlu.module.css';
 
 
 export default function NLUPage({ currentUrl }) {
-  const title = `Natural Language Understanding | ${siteTitle} artificial intelligence`;
+  const title = `Natural Language Understanding | ${siteTitle} NLU AI`;
   return (
     <Layout home>
         <Head>
@@ -17,7 +17,7 @@ export default function NLUPage({ currentUrl }) {
           <meta property="og:url" content="https://ionkom.com/"></meta>
           <meta
               name="description"
-              content='Natural Language software uses machine learning to predict text insights like user intention and domain specific entities.
+              content='Natural Language Understanding service uses machine learning to predict text insights like user intention and domain specific entities.
               You can extract information about people, places, and events and use them to better understand customer conversations.'
           />
           <link rel="canonical" href={ currentUrl } key="canonical" />
@@ -30,17 +30,17 @@ export default function NLUPage({ currentUrl }) {
           </Row>
           <Row>
             <Col>
-              <p className={style.textContent}>Find the meaning from unstructured text using ionkom machine learning.</p>
+              <p className={style.textContent}>Find the meaning from unstructured text using Ionkom machine learning.</p>
             </Col>
           </Row>
           <Row>
-            <Col><Button>Try it for free</Button></Col>
+            <Col><Button href='#nluInAction'>Try it for free</Button></Col>
           </Row>
           <Row className='mt-5 pt-5'>
             <Col md={6} sm={12}>
               <h2>Intelligent text analysis</h2>
               <p className={style.textContent}>Natural Language software uses machine learning to predict text insights like user intention and domain specific entities.
-              You can extract information about people, places, and events and use them to better understand customer conversations.
+              You can extract information about people, places, and events, and use them to better understand customer conversations.
               </p>
             </Col>
             <Col md={6} sm={12}>
