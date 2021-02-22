@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styles from './dialog.module.css';
 import { Button, Card } from 'react-bootstrap';
 
-const srvNotAvailableMsg = 'Server not available';
+const srvNotAvailableMsg = "I'm trying to establish the connection with the dialog server, please try in a few moments";
 
 
 function Message(props) {
@@ -144,7 +144,7 @@ class Dialog extends Component {
     super(props);
     this.apiUrl = props.apiUrl;
     this.chatBoxTitle = props.chatBoxTitle || 'My Virtual Asisstant';
-    this.serverNotAvailableMsg = "Incerc sa stabilesc conexiunea cu serverul de dialog, incearca te rog peste cateva momente";
+    this.serverNotAvailableMsg = srvNotAvailableMsg;
     this.stopDialogVariable = "$leg_op"
 
     this.startUtt = "...";

@@ -30,45 +30,94 @@ export default function DialogSystem({ currentUrl }) {
         </Row>
         <Row>
           <Col>
-            <p className={style.textContent}>Boost customer experience and drive more sales.</p>
+            <p className={style.textContent}>
+              Build AI assistants that really help customers.
+              Boost customer experience, automate and scale the chat conversations on your digital estates.
+            </p>
           </Col>
         </Row>
         <Row>
           <Col><Button href='#dialogSysInAction'>Try it for free</Button></Col>
         </Row>
         <Row className='mt-5 pt-5'>
-          <Col md={6} sm={12}>
-            <h2>Automate conversations </h2>
-            <p className={style.textContent}>Dialog System software use artificial intelligence 
-            to better understand customers requests and based on embedded dialog knowledge tries to guide users to the most relevant resources of your business.
+          <Col md={7} sm={12}>
+            <h2>Increase sales, reduce costs, and automate support on any channel</h2>
+            <p className={style.textContent}>
+              Dialog System is a natural language understanding
+              and dialogue management platform that makes it easy to design and integrate a conversational user interface into your mobile app, web application, device, existing bot, text-to-speech response system, and so on.
+              Using Ionkom Dialog System, you can provide new and engaging ways for users to interact with your digital or physical products.               
             </p>
           </Col>
-          <Col md={6} sm={12}>
+          <Col md={5} sm={12}>
             <img
-              src='/img/contact-2579313_640.jpg'
-              alt='natural language understanding'
-              width='60%'
+              src='/img/chatbot_ilustration.webp'
+              alt='Ionkom dialog system'
+              width='70%'
             />
           </Col>
         </Row>
         <Row className='mt-3 pt-3'>
           <Col md={4} sm={12}>
-            <h3>Get your marketing done</h3>
-            <p className={style.textContent}>Create a tailored customer experience. Engage prospects and customers across multiple communication channels.</p>
+            <h3>Get more and better leads</h3>
+            <p className={style.textContent}>
+              Engage with prospects 24/7. Our customers engagement average is 46%.
+              Get your team collaborating and taking action, seamlessly transferring conversations from bot to human, and back.
+            </p>
           </Col>
           <Col md={4} sm={12}>
-            <h3>Grow sales</h3>
-            <p className={style.textContent}>Scale your efforts without increasing employee headcount.</p>
+            <h3>Increase sales</h3>
+            <p className={style.textContent}>
+              Scale your efforts without increasing employee headcount.
+              Get up to 80% open rates and 10X CTR compared to email with a bot campaign.
+              Be where your customers are with one continuous conversation across channels
+            </p>
           </Col>
           <Col md={4} sm={12}>
-            <h3>Support at a glance</h3>
-            <p className={style.textContent}>Keeps the conversation balanced and add proactivity when is needed.</p>
+            <h3>Automate FAQs</h3>
+            <p className={style.textContent}>
+              Increase customer satisfaction and reduce support costs.
+              Keeps the conversation balanced and add proactivity when is needed.
+              Drive more engagement and deliver better customer experiences at scale with slot-based dialog management.
+              {/* Engage customers on the leading messaging channels, including WhatsApp, Apple Business Chat, Facebook Messenger, Twitter, Line, SMS, RCS and more. */}
+            </p>
           </Col>
         </Row>
         <hr/>
-        <Row className="justify-content-center">
+        <Row className="justify-content-center mb-3">
           <Col xs='auto'>
-            <h1 id="dialogSysInAction">Chatbot API demo</h1>
+            <h2>Competitive Advantage</h2>
+          </Col>
+        </Row>
+        <Row className="justify-content-center mb-2">
+          <Col xs='auto'>
+            <h5>Be present where your customers are.</h5>
+          </Col>
+        </Row>
+        <Row className="justify-content-center mb-3">
+          <Col xs='auto'>
+            <p className={style.textContent}>
+              Engage customers on the most popular messaging channels, including WhatsApp, Apple Business Chat, Facebook Messenger, Twitter, Line, SMS, WeChat and more.
+              Everything happens in real-time, with your users' choices conditioning the journey.
+            </p>
+          </Col>
+        </Row>
+        <Row className="justify-content-center mb-2">
+          <Col xs='auto'>
+            <h5>Enterprise-ready, available on premise.</h5>
+          </Col>
+        </Row>
+        <Row className="justify-content-center mb-3">
+          <Col xs='auto'>
+            <p className={style.textContent}>
+              We provide the infrastructure and take care of the hard work so you can focus on building an amazing product and user experience.
+              The service is ready to be deployed in existing commercial applications and can scale with enterprise quality and performance. The service meets international compliance standards, support unlimited API calls, making it highly accessible in your organization.
+            </p>
+          </Col>
+        </Row>
+        <hr/>
+        <Row className="justify-content-center mb-4">
+          <Col xs='auto'>
+            <h3 id="dialogSysInAction">Chatbot API demo</h3>
           </Col>
         </Row>
         <Row>

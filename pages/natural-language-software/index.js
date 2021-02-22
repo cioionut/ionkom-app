@@ -39,7 +39,7 @@ export default function NLUPage({ currentUrl }) {
             <Col><Button href='#nluInAction'>Try it for free</Button></Col>
           </Row>
           <Row className='mt-5 pt-5'>
-            <Col md={6} sm={12}>
+            <Col md={7} sm={12}>
               <h2>Intelligent text analysis</h2>
               <p className={style.textContent}>
                 Natural Language Understanding (NLU) enables computers to understand human language contained in unstructured data and deliver critical insights.
@@ -49,11 +49,11 @@ export default function NLUPage({ currentUrl }) {
                 You can extract information about people, places, and events, and use them to better understand customer conversations.
               </p>
             </Col>
-            <Col md={6} sm={12}>
+            <Col md={5} sm={12} className="mt-3">
               <img
                 src='/img/paper-2935367_640.png'
                 alt='natural language understanding'
-                width='40%'
+                width='50%'
               />
             </Col>
           </Row>
