@@ -76,7 +76,7 @@ export default function Home({ currentUrl }) {
                 Current weather conditions wherever you are now, using your device's location or IP geolocation
               </li>
               <li>
-                Discover meteorologyc conditions for specific places (country/city) - RO only, comming soon: USA, UK, Germany, France, Italy
+                Discover meteorologyc conditions for specific places (country/city) - RO only, coming soon: USA, UK, Germany, France, Italy
               </li>
             </ul>
             <a href='https://vremea.ionkom.com/' target="_blank" rel="noopener">Explore Ionkom Weather App</a>
@@ -111,7 +111,7 @@ export default function Home({ currentUrl }) {
                 Custom Chatbot Flight assistent demo - <Link href='/dialog-system'>Get Product</Link>
               </li>
               <li>
-                Coronavirus Self Checker - Comming Soon
+                Coronavirus Self Checker - coming Soon
               </li>
             </ul>
           </Col>
@@ -129,10 +129,10 @@ export default function Home({ currentUrl }) {
                 Read text from images - Free OCR (Optical Character Recognition) - <Link href='/visual-ai'>Get Product</Link>
               </li>
               <li>
-                ID card OCR - Comming soon
+                ID card OCR - coming soon
               </li>
               <li>
-                Invoice OCR - Comming soon
+                Invoice OCR - coming soon
               </li>
             </ul>
           </Col>
