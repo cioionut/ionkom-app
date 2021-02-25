@@ -15,7 +15,7 @@ export default function Cookies({ currentUrl }) {
         <meta property="og:url" content="https://www.ionkom.com/"></meta>
         <meta
             name="description"
-            content="Learn more about Ionkom's privacy policy and practices, including what types of info Ionkom receives and how info is used and shared."
+            content="Learn more about Ionkom's cookies policy and practices, including what types of info Ionkom receives and how info is used and shared."
         />                
         <link rel="canonical" href={ currentUrl } key="canonical" />
       </Head>
@@ -54,7 +54,7 @@ export default function Cookies({ currentUrl }) {
                 <a href="https://support.microsoft.com/en-ie/help/17442/windows-internet-explorer-delete-manage-cookies" target="_blank" rel="noopener">Internet Explorer</a>
               </li>
               <li>
-                <a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preference" target="_blank" rel="noopener">Firefox</a>
+                <a href="https://support.mozilla.org/en-US/kb/disable-third-party-cookies" target="_blank" rel="noopener">Firefox</a>
               </li>
               <li>
                 <a href="https://support.apple.com/en-ie/guide/safari/sfri11471/mac" target="_blank" rel="noopener">Safari</a>

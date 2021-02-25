@@ -45,13 +45,13 @@ export default function Layout({
               <Link href="/visual-ai" passHref>
                 <Nav.Link>Visual AI</Nav.Link>
               </Link>
-              <Link href="/contact" passHref>
+              {/* <Link href="/contact" passHref>
                 <Nav.Link>Contact</Nav.Link>
-              </Link>
+              </Link> */}
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        
+
         <main>{children}</main>
 
         <footer className={styles.footer}>
@@ -61,10 +61,13 @@ export default function Layout({
                   <Link href="/about"><a className={styles.footerLink}>About</a></Link>
                 </Col>
                 <Col xs='auto'>
-                  <Link href="/contact"><a className={styles.footerLink}>Contact</a></Link>
+                  <Link href='/policies/cookies'><a className={styles.footerLink}>Cookie Policy</a></Link>
                 </Col>
                 <Col xs='auto'>
-                  <Link href='/policies/cookies'><a className={styles.footerLink}>Cookie Policy</a></Link>
+                  <Link href='/policies/privacy'><a className={styles.footerLink}>Privacy Policy</a></Link>
+                </Col>
+                <Col xs='auto'>
+                  <Link href='/policies/terms'><a className={styles.footerLink}>Terms and Conditions</a></Link>
                 </Col>
                 {/* <Col xs='auto'>
                   <span className="text-muted">© 2020 Copyright: <Link href="/"><a className={styles.footerLink}>ionkom.com</a></Link></span>
