@@ -36,7 +36,7 @@ export default function VisualAI({ currentUrl }) {
         <Row>
           <Col><Button href="https://rapidapi.com/ionkom/api/ocr14/endpoints" target="_blank" >Try it for free</Button></Col>
         </Row>
-        <Row className='mt-5 pt-5'>
+        <Row className='mt-5 pt-5 mb-5'>
           <Col sm={8}>
             <h2>Digitize and understand text from images</h2>
             <p className={style.textContent}>
@@ -81,9 +81,9 @@ export default function VisualAI({ currentUrl }) {
           </Col>
         </Row>
         <hr/>
-        <Row className="justify-content-center mb-3">
+        <Row className="justify-content-center mb-5 mt-5">
           <Col xs='auto'>
-            <h2>Competitive Advantage</h2>
+            <h2 id="pricing" >Competitive Advantage</h2>
           </Col>
         </Row>
         <Row className="justify-content-center mb-3">
@@ -96,7 +96,7 @@ export default function VisualAI({ currentUrl }) {
           </Col>
         </Row>
         <hr/>
-        <Row className="justify-content-center mb-3">
+        <Row className="justify-content-center mb-5 mt-5">
           <Col xs='auto'>
             <h2>Pricing</h2>
           </Col>
@@ -107,7 +107,7 @@ export default function VisualAI({ currentUrl }) {
             <div className="card card-pricing text-center px-2 mb-4">
                 <span className="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Starter</span>
                 <div className="bg-transparent card-header pt-4 border-0">
-                    <h1 className="h1 font-weight-normal text-primary text-center">$<span className="price">0</span><span className="h6 text-muted ml-2">/ month</span></h1>
+                    <h2 className="h2 font-weight-normal text-primary text-center">$<span className="price">0</span><span className="h6 text-muted ml-2">/ month</span></h2>
                     <p className={`bg-transparent ${style.textContent} `}>For individuals who just want the essentials to get started quickly</p>
                 </div>
                 <div className="card-body pt-0">
@@ -124,7 +124,7 @@ export default function VisualAI({ currentUrl }) {
             <div className="card card-pricing text-center px-2 mb-4">
                 <span className="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Professional</span>
                 <div className="bg-transparent card-header pt-4 border-0">
-                    <h1 className="h1 font-weight-normal text-primary text-center">$<span className="price">14.95</span><span className="h6 text-muted ml-2">/ month</span></h1>
+                    <h2 className="h2 font-weight-normal text-primary text-center">$<span className="price">14.95</span><span className="h6 text-muted ml-2">/ month</span></h2>
                     <p className={`bg-transparent ${style.textContent} `}>For professionals who require more volume for their application</p>
                 </div>
                 <div className="card-body pt-0">
@@ -139,7 +139,7 @@ export default function VisualAI({ currentUrl }) {
             <div className="card card-pricing popular shadow text-center px-2 mb-4">
                 <span className="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Business</span>
                 <div className="bg-transparent card-header pt-4 border-0">
-                    <h1 className="h1 font-weight-normal text-primary text-center">$<span className="price">49.95</span><span className="h6 text-muted ml-2">/ month</span></h1>
+                    <h2 className="h2 font-weight-normal text-primary text-center">$<span className="price">49.95</span><span className="h6 text-muted ml-2">/ month</span></h2>
                     <p className={`bg-transparent ${style.textContent} `}>For professionals who work on larger scale applications</p>
                 </div>
                 <div className="card-body pt-0">
@@ -153,7 +153,7 @@ export default function VisualAI({ currentUrl }) {
             <div className="card card-pricing text-center px-2 mb-4">
                 <span className="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Enterprise</span>
                 <div className="bg-transparent card-header pt-4 px-2 border-0">
-                    <h1 className="h1 font-weight-normal text-primary text-center" data-pricing-value="60">$<span className="price">149.95</span><span className="h6 text-muted ml-2">/ month</span></h1>
+                    <h2 className="h2 font-weight-normal text-primary text-center" data-pricing-value="60">$<span className="price">149.95</span><span className="h6 text-muted ml-2">/ month</span></h2>
                     <p className={`bg-transparent ${style.textContent} `}>For businesses who need high volume, production-level use</p>
                 </div>
                 <div className="card-body pt-0">
@@ -167,7 +167,7 @@ export default function VisualAI({ currentUrl }) {
           </div>
         </Container>
         </Row>
-        <Row className="justify-content-center mb-3">
+        <Row className="justify-content-center mb-3 mt-5">
           <Col xs='auto'>
             <h2>Language support</h2>
           </Col>
