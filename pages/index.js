@@ -155,7 +155,7 @@ export default function Home({ currentUrl }) {
           </Col>
           <Col sm={7}>
             <h2>Office and Business Automation</h2>
-            <p style={{color: '#5f6368'}}>Using a combination of our services we can fully automate your work, <Link href="https://grfvpx7kxvr.typeform.com/to/omcYMMMm" target="_blank" rel="noopener" >contact us </Link>to find a way to do this.</p>
+            <p style={{color: '#5f6368'}}>Using a combination of our services we can fully automate your work, <Link href="https://grfvpx7kxvr.typeform.com/to/omcYMMMm"><a target="_blank" rel="noopener" >contact us</a></Link> to find a way to do this.</p>
             <p>
               Robot Process Automation (RPA) has grown alot in the last years but what it promise is not realy achivable without another team with specialized expertise.
             </p>
