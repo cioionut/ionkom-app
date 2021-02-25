@@ -45,7 +45,7 @@ export default function Layout({
               <Link href="/visual-ai" passHref>
                 <Nav.Link>Visual AI</Nav.Link>
               </Link>
-              <Link href="https://grfvpx7kxvr.typeform.com/to/omcYMMMm"passHref>
+              <Link href="https://grfvpx7kxvr.typeform.com/to/omcYMMMm" passHref>
                 <Nav.Link target="_blank" rel="noopener" >Request a Demo</Nav.Link>
               </Link>
             </Nav>
