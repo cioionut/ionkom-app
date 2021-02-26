@@ -117,7 +117,7 @@ export default function VisualAI({ currentUrl }) {
                         {/* <li>Monthly updates</li>
                         <li>Free cancelation</li> */}
                     </ul>
-                    <Button className='mb-3' variant='outline-primary' href="https://rapidapi.com/ionkom/api/ocr14/endpoints" target="_blank" >Order Now</Button>
+                    <Button className='mb-3' variant='outline-primary' href="https://rapidapi.com/ionkom/api/ocr14/endpoints" target="_blank" rel="noopener" >Order Now</Button>
                     {/* <button type="button" className="btn btn-outline-secondary mb-3">Order now</button> */}
                 </div>
             </div>
