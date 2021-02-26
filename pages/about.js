@@ -1,10 +1,10 @@
-import Head from 'next/head'
-// import Link from 'next/link'
-import Layout, { siteTitle } from '../components/layout'
+import Head from 'next/head';
+import Layout, { siteTitle } from '../components/layout';
+import { Container, Row, Col } from 'react-bootstrap';
 
 
 export default function About({ currentUrl }) {
-  const title = `Ionkom - about us and our mission`
+  const title = `About us and our mission - Ionkom`
   return (
     <Layout home>
       <Head>
@@ -19,12 +19,20 @@ export default function About({ currentUrl }) {
         />
         <link rel="canonical" href={ currentUrl } key="canonical" />
       </Head>
-      <section className="container">
-        <p style={{ fontSize: 21 }}>
-          Our mission is to create more free <b>time</b> for humans and
-          help them to better understand and use technology.
-        </p>
-      </section>
+      <Container>
+        <Row className="mt-5 mb-5">
+          <Col className="mt-5 mb-5">
+            <h1 className="mt-5 mb-5" style={{ fontWeight: 400 }}>
+              Our mission is to create more free <b>time</b> for humans and help them to better understand and use technology.
+            </h1>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+
+          </Col>
+        </Row>
+      </Container>
     </Layout>
   )
 }
