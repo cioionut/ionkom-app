@@ -20,7 +20,7 @@ export default function DialogSystem({ currentUrl }) {
           <meta property="og:url" content="https://ionkom.com/"></meta>
           <meta
               name="description"
-              content='Ionkom dialog system is a chatbot construction service. Boost customer experience, automate and scale the chat conversations on your digital estates'
+              content='Ionkom dialog system is a chatbot construction service. Boost customer experience, automate and scale selling process on your digital products'
           />
           <link rel="canonical" href={ currentUrl } key="canonical" />
       </Head>
