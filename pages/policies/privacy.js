@@ -30,6 +30,11 @@ export default function Provacy({ currentUrl, bodyContent, headContent }) {
           </Col>
         </Row>
       </Container>
+      <style global jsx>{`
+        p {
+          margin-bottom: 0;
+        }
+      `}</style>
     </Layout>
   )
 }
