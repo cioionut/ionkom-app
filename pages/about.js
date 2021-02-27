@@ -28,15 +28,15 @@ export default function About({ currentUrl }) {
             </h1>
           </Col>
         </Row>
-        <Row>
+        <Row className="mt-5 mb-5">
           <Col>
             <h2>End user in the first place</h2>
             <p>
-              Dedicated to make life easier, Ionkom products tries to eliminate the time wasted between people and machines.
+              Dedicated to make life easier, Ionkom products tries to eliminate the time wasted between people and machines and make their online presence to be more efficient and valuable, everithing with the goal of more direct real world interactions.
             </p>
           </Col>
         </Row>
-        <Row>
+        <Row className="mt-5 mb-5">
           <Col>
             <h2>Increase conversation efficiency and organize information</h2>
             <p>
@@ -65,9 +65,9 @@ export default function About({ currentUrl }) {
             </p>
           </Col>
         </Row>
-        <Row>
+        <Row className="mt-5 mb-5">
           <Col>
-            <h2>Little help for humans health</h2>
+            <h2>Little help in Healthcare</h2>
             <p>
               Ionkom Coronavirus Self-Chacker is our first product in health universe.
               It is a digital assistent that helps people to:
@@ -79,13 +79,55 @@ export default function About({ currentUrl }) {
                   get a quick overview about vaccine options
                 </li>
                 <li>
-                  get help in imptoms identification
+                  get help in simptoms identification
                 </li>
                 <li>
                   learn how to interpret self-tests
                 </li>
               </ul>
             </p>
+          </Col>
+        </Row>
+        <Row className="mt-5 mb-5">
+          <Col>
+            <h2 id="relevant">Relevant News Platform</h2>
+            <p>
+              In a world full of information we need a filter. <Link href="#relevant">Relevant</Link> initiative aims to address this problem and tries to present a different point of view about today news relevance and true value.
+            </p>
+          </Col>
+        </Row>
+        <Row className="mt-5 mb-5">
+          <Col>
+            <h2 id="elearning">e-Learning Content</h2>
+            <p>Every theoretical information can now be learned from internet. The key stays in perseverance, guidance, directions and long term goals.</p>
+          </Col>
+        </Row>
+        <Row className="mt-5 mb-5">
+          <Col>
+            <h2 id="elearning">Cyber Security and Privacy Services</h2>
+            <p>Security and privacy on the internet is the most important thing. We want to educate our customers to apply a security layer on their online presence.</p>
+          </Col>
+        </Row>
+        <Row className="mt-5 mb-5">
+          <Col>
+            <h2 id="elearning">Research and Development</h2>
+            <p>
+              Constant research in information technology is crucial for our business, see <Link href="/">here</Link> the list of technologies that are on our radar. 
+              The IT industry is not the single place where we try to inovate, we are also so interested in how to make the micro-economy actors to interact with eatch other in order to have an uniform distribution of wealth.
+            </p>
+          </Col>
+        </Row>
+        <Row className="mt-5 mb-5">
+          <Col>
+            <h2 id="elearning">Contact us</h2>
+            <ul>
+              <li>
+                on email at hello@ionkom.com
+              </li>
+              <li>
+                on social media - Reddit, Twitter, Facebook
+              </li>
+            </ul>
           </Col>
         </Row>
       </Container>
