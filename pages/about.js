@@ -32,7 +32,7 @@ export default function About({ currentUrl }) {
           <Col>
             <h2>End user in the first place</h2>
             <p>
-              Dedicated to make life easier, Ionkom products tries to eliminate the time wasted between people and machines and make their online presence to be more efficient and valuable, everithing with the goal of more direct real world interactions.
+              Dedicated to make life easier, Ionkom products tries to eliminate the time wasted between people and machines and make their online presence to be more efficient and valuable, everything with the goal of more direct real world interactions.
             </p>
           </Col>
         </Row>
@@ -49,26 +49,23 @@ export default function About({ currentUrl }) {
               </a>.
               Fortunately, artificial intelligence (AI) technologies are arriving just in time to help us.
             </p>
-            <p>
-              Ionkom services powered by AI:
-              <ul>
-                <li>
-                  <Link href='/natural-language-software'>Natural Language Understanding</Link>
-                </li>
-                <li>
-                  <Link href='/dialog-system'>Dialog System</Link>
-                </li>
-                <li>
-                  <Link href='/visual-ai'>Optical Character Recognition</Link>
-                </li>
-              </ul>
-            </p>
+            Ionkom services powered by AI:
+            <ul>
+              <li>
+                <Link href='/natural-language-software'>Natural Language Understanding</Link>
+              </li>
+              <li>
+                <Link href='/dialog-system'>Dialog System</Link>
+              </li>
+              <li>
+                <Link href='/visual-ai'>Optical Character Recognition</Link>
+              </li>
+            </ul>
           </Col>
         </Row>
         <Row className="mt-5 mb-5">
           <Col>
             <h2>Little help in Healthcare</h2>
-            <p>
               Ionkom Coronavirus Self-Chacker is our first product in health universe.
               It is a digital assistent that helps people to:
               <ul>
@@ -85,7 +82,6 @@ export default function About({ currentUrl }) {
                   learn how to interpret self-tests
                 </li>
               </ul>
-            </p>
           </Col>
         </Row>
         <Row className="mt-5 mb-5">

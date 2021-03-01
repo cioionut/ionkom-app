@@ -5,7 +5,7 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap'
 
 
 export default function Home({ currentUrl }) {
-  const title = `Ionkom - Connect with friends and explore direct contact`;
+  const title = `Ionkom - Connect with friends and explore the world around you`;
 
   return (
     <Layout home>
@@ -23,17 +23,18 @@ export default function Home({ currentUrl }) {
 
       <Container>
         <Row>
-          <Col sm={6}>
-            <h1>Connect with friends and explore direct contact</h1>
+          <Col sm={7}>
+            <h1>Connect with friends and explore the world around you</h1>
             <p style={{color: '#5f6368'}}>In person meetings are the ultimate goal, share your skills and let our network to shape your personal brand.</p>
           </Col>
           <Col>
             <Form>
               <Form.Group controlId="formBasicEmail">
-                <Form.Label>Join Ionkom Today</Form.Label>
+                <Form.Label>Join Ionkom Today - waiting list</Form.Label>
                 <Form.Control type="email" placeholder="Enter email" />
                 <Form.Text className="text-muted">
                   We'll never share your email with anyone else.
+                  By clicking Sign Up, you agree to our <Link href="/policies/terms">Terms</Link>. Learn how we collect, use and share your data in our <Link href="/policies/privacy">Data Policy</Link> and how we use cookies and similar technology in our <Link href="/policies/cookies">Cookies Policy</Link>.
                 </Form.Text>
               </Form.Group>
 
@@ -45,7 +46,7 @@ export default function Home({ currentUrl }) {
                 <Form.Check type="checkbox" label="Check me out" />
               </Form.Group> */}
               <Button variant="primary" type="submit">
-                Submit
+                Sign Up
               </Button>
             </Form>
           </Col>
