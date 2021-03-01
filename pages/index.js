@@ -5,7 +5,7 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap'
 
 
 export default function Home({ currentUrl }) {
-  const title = `Ionkom - Connect with friends and explore direct real world contact`;
+  const title = `Ionkom - Connect with friends and explore direct contact`;
 
   return (
     <Layout home>
@@ -24,7 +24,7 @@ export default function Home({ currentUrl }) {
       <Container>
         <Row>
           <Col sm={6}>
-            <h1>Connect with friends and explore direct real world contact</h1>
+            <h1>Connect with friends and explore direct contact</h1>
             <p style={{color: '#5f6368'}}>In person meetings are the ultimate goal, share your skills and let our network to shape your personal brand.</p>
           </Col>
           <Col>
