@@ -24,7 +24,7 @@ export default function About({ currentUrl }) {
         <Row className="mt-5 mb-5">
           <Col className="mt-5 mb-5">
             <h1 className="mt-5 mb-5" style={{ fontWeight: 400 }}>
-              Our mission is to create more free <b>time</b> for humans and help them to better understand and use technology.
+              Our mission is to give humans more <b>time</b> for themselves and help them better understand and use technology.
             </h1>
           </Col>
         </Row>
@@ -40,7 +40,7 @@ export default function About({ currentUrl }) {
           <Col>
             <h2>Increase conversation efficiency and organize information</h2>
             <p>
-              <span>Unstructured data is growing at 55-65 percent each year. And as much as </span>
+              <span>Unstructured data is growing at 55-65 percent each year and as much as </span>
               <a 
                 href="https://www.cio.com/article/3406806/ai-unleashes-the-power-of-unstructured-data.html"
                 target="_blank" rel="noopener"
@@ -70,7 +70,7 @@ export default function About({ currentUrl }) {
               It is a digital assistent that helps people to:
               <ul>
                 <li>
-                  get fast guidance to the official informations about COVID-19
+                  get fast guidance to the official information about COVID-19
                 </li>
                 <li>
                   get a quick overview about vaccine options

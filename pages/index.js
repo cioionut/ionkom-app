@@ -25,7 +25,7 @@ export default function Home({ currentUrl }) {
         <Row>
           <Col sm={7}>
             <h1>Connect with friends and explore the world around you</h1>
-            <p style={{color: '#5f6368'}}>In person meetings are the ultimate goal, share your skills and let our network to shape your personal brand.</p>
+            <p style={{color: '#5f6368'}}>Face to face meetings are the ultimate goal. Share your skills and let our network shape your personal brand.</p>
           </Col>
           <Col>
             <Form>
@@ -56,7 +56,7 @@ export default function Home({ currentUrl }) {
           <Col>
             <h2>Helpful products for everyone</h2>
             <p style={{color: '#5f6368'}} >
-              While you are outside with friends, let us do the boring tasks for you. As our mission states we want to make more free time for our users, to achive that we offer for free a lot of helpful tools.
+              While you are outside with friends, let us do the boring tasks for you. As our mission states we want to give our users more time for themselves, to achieve that we offer a lot of free tools.
               Explore all products bellow.
             </p>
             {/* <img
@@ -112,7 +112,7 @@ export default function Home({ currentUrl }) {
                 Custom Chatbot Flight assistent demo - <Link href='/dialog-system'>Get Product</Link>
               </li>
               <li>
-                Coronavirus Self Checker - coming Soon
+                Coronavirus Self Checker - coming soon
               </li>
             </ul>
           </Col>
@@ -158,10 +158,10 @@ export default function Home({ currentUrl }) {
             <h2>Office and Business Automation</h2>
             <p style={{color: '#5f6368'}}>Using a combination of our services we can fully automate your work, <Link href="https://grfvpx7kxvr.typeform.com/to/omcYMMMm"><a target="_blank" rel="noopener" >contact us</a></Link> to find a way to do this.</p>
             <p>
-              Robot Process Automation (RPA) has grown alot in the last years but what it promise is not realy achivable without another team with specialized expertise.
+              Robot Process Automation (RPA) has grown alot in the last years but what it promises is not realy achivable without another team with specialized expertise.
             </p>
             <p>
-              We prupose a traditional Service-API-Service approach that baypass the RPA (read as: unnecesary clicks on screen to do simple tasks) and do exactly the same job using programming scripts but cheap and headcount efficient.
+              We propose a traditional Service-API-Service approach that bypass the RPA (read as: unnecesary clicks on screen to do simple tasks) and do exactly the same job using programming scripts but cheap and headcount efficient.
             </p>
           </Col>
         </Row>

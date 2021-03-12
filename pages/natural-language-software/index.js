@@ -68,7 +68,7 @@ export default function NLUPage({ currentUrl }) {
             <Col md={4} sm={12}>
               <h3>Enterprise-ready, available on premise</h3>
               <p className={style.textContent}>
-                The service is ready to be deployed in existing commercial applications and can scale with enterprise quality and performance. The service meets international compliance standards, support unlimited API calls, making it highly accessible in your organization.
+                The service is ready to be deployed in existing commercial applications and can scale with enterprise quality and performance. The service meets international compliance standards, supports unlimited API calls, making it highly accessible in your organization.
               </p>
             </Col>
             <Col md={4} sm={12}>
@@ -83,7 +83,7 @@ export default function NLUPage({ currentUrl }) {
           <Row className='mt-3 pt-3'>
             <Col>
               <h3>Two classifiers one model</h3>
-              <p className={style.textContent}>Underlying ML Technology - The algorithm uses state of the art natural language understanding approaches. It uses a sequence to sequence neural network, that encode the meaning of a sentence and two decoders, one for intent detection and another for slot filling (or entity recognition) that decode the captured meaning.</p>
+              <p className={style.textContent}>Underlying ML Technology - The algorithm uses state of the art natural language understanding approaches. It uses a sequence to sequence neural network, that encodes the meaning of a sentence and two decoders, one for intent detection and another for slot filling (or entity recognition) that decodes the captured meaning.</p>
               <ul className={style.textContent}>
                 <li>
                   <p>Intent detection: Classify text by sentence meaning. Find out what your customers want, in the example bellow 'flight' will be the predicted intention.</p>

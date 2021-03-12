@@ -76,7 +76,7 @@ export default function DialogSystem({ currentUrl }) {
             <h3>Automate FAQs</h3>
             <p className={style.textContent}>
               Increase customer satisfaction and reduce support costs.
-              Keeps the conversation balanced and add proactivity when is needed.
+              Keeps the conversation balanced and add proactivity when it is needed.
               Drive more engagement and deliver better customer experiences at scale with slot-based dialog management.
               {/* Engage customers on the leading messaging channels, including WhatsApp, Apple Business Chat, Facebook Messenger, Twitter, Line, SMS, RCS and more. */}
             </p>
@@ -110,7 +110,7 @@ export default function DialogSystem({ currentUrl }) {
           <Col xs='auto'>
             <p className={style.textContent}>
               We provide the infrastructure and take care of the hard work so you can focus on building an amazing product and user experience.
-              The service is ready to be deployed in existing commercial applications and can scale with enterprise quality and performance. The service meets international compliance standards, support unlimited API calls, making it highly accessible in your organization.
+              The service is ready to be deployed in existing commercial applications and can scale with enterprise quality and performance. The service meets international compliance standards, supports unlimited API calls, making it highly accessible in your organization.
             </p>
           </Col>
         </Row>
