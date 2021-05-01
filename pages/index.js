@@ -80,7 +80,7 @@ export default function Home({ currentUrl }) {
                 Discover meteorologyc conditions for specific places (country/city) - RO only, coming soon: USA, UK, Germany, France, Italy
               </li>
             </ul>
-            <a href='https://vremea.ionkom.com/' target="_blank" rel="noopener">Explore Ionkom Weather App</a>
+            <a href='https://meteo.ionkom.com/' target="_blank" rel="noopener">Explore Ionkom Weather App</a>
           </Col>
           <Col sm={5}>
             <img
