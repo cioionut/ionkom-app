@@ -1,9 +1,10 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../../components/layout'
-import { Container, Row, Col, Button, Card, Table } from 'react-bootstrap'
+import { Container, Row, Col, Button, Card, Table, Accordion } from 'react-bootstrap'
 import style from './ocr.module.css'
 import ocrSupportedLanguages from '../../data/ocr_supported_languages'
 // import Link from 'next/link';
+import ContextAwareToggle from '../../components/global/contextawaretoggle';
 
 
 export default function VisualAI({ currentUrl }) {
@@ -121,7 +122,7 @@ export default function VisualAI({ currentUrl }) {
                     {/* <button type="button" className="btn btn-outline-secondary mb-3">Order now</button> */}
                 </div>
             </div>
-            <div className="card card-pricing text-center px-2 mb-4">
+            <div className="card card-pricing popular shadow text-center px-2 mb-4">
                 <span className="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Professional</span>
                 <div className="bg-transparent card-header pt-4 border-0">
                     <h2 className="h2 font-weight-normal text-primary text-center">$<span className="price">14.95</span><span className="h6 text-muted ml-2">/ month</span></h2>
@@ -132,11 +133,10 @@ export default function VisualAI({ currentUrl }) {
                         <li><b>2500 / month quota</b></li>
                         <li className={style.textContent}>+ ($0.050 USD/extra req)</li>
                     </ul>
-                    <Button className='mb-3' variant='outline-primary' href="https://rapidapi.com/ionkom/api/ocr14/endpoints" target="_blank" >Order Now</Button>
-                    
+                    <Button className='mb-3' variant='primary' href="https://rapidapi.com/ionkom/api/ocr14/endpoints" target="_blank" >Order Now</Button>
                 </div>
             </div>
-            <div className="card card-pricing popular shadow text-center px-2 mb-4">
+            <div className="card card-pricing text-center px-2 mb-4">
                 <span className="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Business</span>
                 <div className="bg-transparent card-header pt-4 border-0">
                     <h2 className="h2 font-weight-normal text-primary text-center">$<span className="price">49.95</span><span className="h6 text-muted ml-2">/ month</span></h2>
@@ -147,7 +147,7 @@ export default function VisualAI({ currentUrl }) {
                       <li><b>10000 / month quota</b></li>
                       <li className={style.textContent}>+ ($0.040 USD/extra req)</li>
                     </ul>
-                    <Button className='mb-3' variant='primary' href="https://rapidapi.com/ionkom/api/ocr14/endpoints" target="_blank" >Order Now</Button>                    
+                    <Button className='mb-3' variant='outline-primary' href="https://rapidapi.com/ionkom/api/ocr14/endpoints" target="_blank" >Order Now</Button>                    
                 </div>
             </div>
             <div className="card card-pricing text-center px-2 mb-4">
@@ -178,25 +178,46 @@ export default function VisualAI({ currentUrl }) {
               Computer Vision's OCR APIs support several languages. 
               They require you to specify a language code.
             </p>
-            <Table striped bordered hover>
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Language</th>
-                  <th>Lang. Code</th>
-                </tr>
-              </thead>
-              <tbody>
-                {ocrSupportedLanguages.map((lang, idx) => {
-                    return (
-                    <tr scope="row" key={idx}>
-                      <td>{idx+1}</td>
-                      <td>{lang.language}</td>
-                      <td>{lang.langCode}</td>
-                    </tr>)
-                  })}
-              </tbody>
-            </Table>
+            
+            <Accordion>
+            <Card className='mb-2' style={{border:0}}>
+              <Accordion.Toggle as={Card.Header} eventKey="0" style={{cursor: "pointer"}}>
+                <h2 style={{ fontSize: "1.12rem", display: "inline-block" }}>View supported languages</h2>
+                <div style={{ display: "inline-block", float: "right" }}>
+                  <ContextAwareToggle eventKey="0" />
+                </div>
+              </Accordion.Toggle>
+                
+                
+                <Accordion.Collapse eventKey="0">
+
+                <Card.Body>
+                  <Table striped bordered hover>
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Language</th>
+                        <th>Lang. Code  <ContextAwareToggle eventKey="0" /></th>
+                      </tr>
+                    </thead>
+                      <tbody>
+                        {ocrSupportedLanguages.map((lang, idx) => {
+                            return (
+                            <tr scope="row" key={idx}>
+                              <td>{idx+1}</td>
+                              <td>{lang.language}</td>
+                              <td>{lang.langCode}</td>
+                            </tr>)
+                          })}
+                      </tbody>
+                  </Table>
+                </Card.Body>
+
+
+              </Accordion.Collapse>
+              </Card>
+            </Accordion>
+
           </Col>
         </Row>
       </Container>
