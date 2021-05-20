@@ -68,30 +68,6 @@ export default function Home({ currentUrl }) {
         </Row>
         <hr/>
         <Row className="mt-3 p-1">
-          <Col sm={7}>
-            <h3>Weather</h3>
-            <p style={{color: '#5f6368'}}>Precise weather forecast using artificial intelligence.</p>
-            Ionkom Weather presents:
-            <ul>
-              <li>
-                Current weather conditions wherever you are now, using your device's location or IP geolocation
-              </li>
-              <li>
-                Discover meteorologyc conditions for specific places (country/city) - RO only, coming soon: USA, UK, Germany, France, Italy
-              </li>
-            </ul>
-            <a href='https://meteo.ionkom.com/' target="_blank" rel="noopener">Explore Ionkom Weather App</a>
-          </Col>
-          <Col sm={5}>
-            <img
-              src='/img/meteorology_ilustration.webp'
-              alt='meteorology ilustration'
-              width='300px'
-            />
-          </Col>
-        </Row>
-        <hr/>
-        <Row className="mt-3 p-1">
           <Col sm={5}>
             <img
               src='/img/chatbot_ilustration.webp'
@@ -115,6 +91,30 @@ export default function Home({ currentUrl }) {
                 Coronavirus Self Checker - coming soon
               </li>
             </ul>
+          </Col>
+        </Row>
+        <hr/>
+        <Row className="mt-3 p-1">
+          <Col sm={7}>
+            <h3>Weather</h3>
+            <p style={{color: '#5f6368'}}>Precise weather forecast using artificial intelligence.</p>
+            Ionkom Weather presents:
+            <ul>
+              <li>
+                Current weather conditions wherever you are, the app use your device's location or IP geolocation
+              </li>
+              <li>
+                Discover meteorologyc conditions for specific places (country/city/populated area) for United States, Canada, United Kingdom, Germany, Italy, Netherlands, România, Switzerland.
+              </li>
+            </ul>
+            <a href='https://meteo.ionkom.com/' target="_blank" rel="noopener">Explore Ionkom Weather App</a>
+          </Col>
+          <Col sm={5}>
+            <img
+              src='/img/meteorology_ilustration.webp'
+              alt='meteorology ilustration'
+              width='300px'
+            />
           </Col>
         </Row>
         <hr/>
@@ -156,12 +156,15 @@ export default function Home({ currentUrl }) {
           </Col>
           <Col sm={7}>
             <h2>Office and Business Automation</h2>
-            <p style={{color: '#5f6368'}}>Using a combination of our services we can fully automate your work, <Link href="https://grfvpx7kxvr.typeform.com/to/omcYMMMm"><a target="_blank" rel="noopener" >contact us</a></Link> to find a way to do this.</p>
+            <p style={{color: '#5f6368'}}>Using a combination of our services we can fully automate your work, <Link href="https://grfvpx7kxvr.typeform.com/to/omcYMMMm"><a target="_blank" rel="noopener" >contact us</a></Link> to find how.</p>
             <p>
               Robot Process Automation (RPA) has grown alot in the last years but what it promises is not realy achivable without another team with specialized expertise.
             </p>
             <p>
-              We propose a traditional Service-API-Service approach that bypass the RPA (read as: unnecesary clicks on screen to do simple tasks) and do exactly the same job using programming scripts but cheap and headcount efficient.
+              We propose a traditional App-API-App approach that avoids the traditional RPA overhead, in many cases the majority of automation tasks can be achivable with a cuple of scripts and of corse a central orchestrator for scheduling. 
+            </p>
+            <p>
+              Do exactly the same job using programming scripts but cheap and headcount efficient.
             </p>
           </Col>
         </Row>
