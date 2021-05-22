@@ -74,9 +74,8 @@ export default function NLUPage({ currentUrl }) {
             <Col md={4} sm={12}>
               <h3>Custom language solution</h3>
               <p className={style.textContent}>
-                Quickly build a custom language solution, just bring your data, no coding skils required.
-                With our support the models can benefit from always learning. Active learning support is used to continuously improve the quality of the natural language models.
-
+                Quickly build a custom language solution, just bring your data, no coding skills required. 
+                With our support, the models can benefit from always learning. Active learning support is used to continuously improve the quality of the natural language models.
               </p>
             </Col>
           </Row>
@@ -86,10 +85,10 @@ export default function NLUPage({ currentUrl }) {
               <p className={style.textContent}>Underlying ML Technology - The algorithm uses state of the art natural language understanding approaches. It uses a sequence to sequence neural network, that encodes the meaning of a sentence and two decoders, one for intent detection and another for slot filling (or entity recognition) that decodes the captured meaning.</p>
               <ul className={style.textContent}>
                 <li>
-                  <p>Intent detection: Classify text by sentence meaning. Find out what your customers want, in the example bellow 'flight' will be the predicted intention.</p>
+                  <p>Intent detection: Classify text by sentence meaning. Find out what your customers want, in the example below 'flight' will be the predicted intention.</p>
                 </li>
                 <li>
-                  <p>Entity Recognition: Extract relevant information from unstructured text. Entities can be places, dates, persons in a general context or more precise like in the example bellow entities dependent from sentence context like 'from location' and 'to location'.</p>
+                  <p>Entity Recognition: Extract relevant information from unstructured text. Entities can be places, dates, persons in a general context or more precise like in the example below entities dependent on sentence context like 'from location' and 'to location'.</p>
                 </li>
               </ul>
             </Col>

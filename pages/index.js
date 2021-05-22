@@ -25,7 +25,7 @@ export default function Home({ currentUrl }) {
         <Row>
           <Col sm={7}>
             <h1>Connect with friends and explore the world around you</h1>
-            <p style={{color: '#5f6368'}}>Face to face meetings are the ultimate goal. Share your skills and let our network shape your personal brand.</p>
+            <p style={{color: '#5f6368'}}>Face-to-face meetings are the ultimate goal. Share your skills and let our network shape your personal brand.</p>
           </Col>
           <Col>
             <Form>
@@ -56,8 +56,8 @@ export default function Home({ currentUrl }) {
           <Col>
             <h2>Helpful products for everyone</h2>
             <p style={{color: '#5f6368'}} >
-              While you are outside with friends, let us do the boring tasks for you. As our mission states we want to give our users more time for themselves, to achieve that we offer a lot of free tools.
-              Explore all products bellow.
+              While you are outside with friends, let us do the boring tasks for you. 
+              As <Link href="/about">our mission</Link> states, we want to give our users more time for themselves, to achieve this goal we offer a lot of free tools. Explore all products below.
             </p>
             {/* <img
               src='/img/zachary-nelson-98Elr-LIvD8-unsplash.jpg'
@@ -104,7 +104,7 @@ export default function Home({ currentUrl }) {
                 Current weather conditions wherever you are, the app use your device's location or IP geolocation
               </li>
               <li>
-                Discover meteorologyc conditions for specific places (country/city/populated area) for United States, Canada, United Kingdom, Germany, Italy, Netherlands, România, Switzerland.
+                Discover meteorological conditions for specific places (country/city/populated area) for United States, Canada, United Kingdom, Germany, Italy, Netherlands, România, Switzerland.
               </li>
             </ul>
             <a href='https://meteo.ionkom.com/' target="_blank" rel="noopener">Explore Ionkom Weather App</a>
@@ -122,8 +122,8 @@ export default function Home({ currentUrl }) {
           <Col sm={7}>
             <h2>Visual AI Reading</h2>
             <p style={{color: '#5f6368'}}>
-              Optical Character Recognition (OCR) can recognize and extract text from images.
-              Fast deep learning models are ready to capture data from documents instantly. Reduce turn around times and the manual entry effort required.
+              Optical Character Recognition (OCR) can recognize and extract text from images. 
+              Fast deep learning models are ready to capture data from documents instantly. Reduce turnaround times and the manual entry effort required.
             </p>
             <ul>
               <li>

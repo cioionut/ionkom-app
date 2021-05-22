@@ -41,8 +41,8 @@ export default function VisualAI({ currentUrl }) {
           <Col sm={8}>
             <h2>Digitize and understand text from images</h2>
             <p className={style.textContent}>
-              Optical Character Recognition (OCR) can recognize and extract text from images.
-              Fast deep learning models are ready to capture data from documents instantly. Reduce turn around times and the manual entry effort required.
+              Optical Character Recognition (OCR) can recognize and extract text from images. 
+              Fast deep learning models are ready to capture data from documents instantly. Reduce turnaround times and the manual entry effort required.
             </p>
             <span className={style.textContent}>
               Available OCR Services
@@ -65,7 +65,7 @@ export default function VisualAI({ currentUrl }) {
         <Row className='mt-3 pt-3'>
           <Col md={4} sm={12}>
             <h3>Read Arbitrary Text</h3>
-            <p className={style.textContent}>Recognize and extract text from any image, such as photos of license plates, street sign, traffic sign or any other objects with serial numbers.</p>
+            <p className={style.textContent}>Recognize and extract text from any image, such as photos of license plates, street signs, traffic signs, or any other objects with serial numbers.</p>
           </Col>
           <Col md={4} sm={12}>
             <h3>Read Documents</h3>
@@ -73,7 +73,7 @@ export default function VisualAI({ currentUrl }) {
           </Col>
           <Col md={4} sm={12}>
             <h3>Industry-leading accuracy</h3>
-            <p className={style.textContent}>Our computer vision collection have the most new and performant machine learning models.</p>
+            <p className={style.textContent}>Our computer vision collection has the newest and performant machine learning models.</p>
           </Col>
         </Row>
         <Row className="justify-content-center mb-3">
@@ -90,10 +90,10 @@ export default function VisualAI({ currentUrl }) {
         <Row className="justify-content-center mb-3">
           <Col xs='auto'>
           <p className={style.textContent}>
-              OCR API uses machine learning to detect text within images in more than 80 languages and various file types.
-              Take advantage and automate manual data entry in your organization.
-              The first step to digitalization era begins with Document Understanding AI, which lets you process millions of documents quickly and automate business workflows.
-            </p>
+            OCR API uses machine learning to detect text within images in more than 80 languages and various file types. 
+            Take advantage and automate manual data entry in your organization. 
+            The first step to the digitalization era begins with Document Understanding AI, which lets you process millions of documents quickly and automate business workflows.
+          </p>
           </Col>
         </Row>
         <hr/>
@@ -187,10 +187,7 @@ export default function VisualAI({ currentUrl }) {
                   <ContextAwareToggle eventKey="0" />
                 </div>
               </Accordion.Toggle>
-                
-                
                 <Accordion.Collapse eventKey="0">
-
                 <Card.Body>
                   <Table striped bordered hover>
                     <thead>
@@ -212,12 +209,9 @@ export default function VisualAI({ currentUrl }) {
                       </tbody>
                   </Table>
                 </Card.Body>
-
-
               </Accordion.Collapse>
               </Card>
             </Accordion>
-
           </Col>
         </Row>
       </Container>

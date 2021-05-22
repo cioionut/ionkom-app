@@ -41,7 +41,7 @@ export default function DialogSystem({ currentUrl }) {
         </Row>
         <Row className='mt-5 pt-5'>
           <Col md={7} sm={12}>
-            <h2>Increase sales, reduce costs, and automate support on any channel</h2>
+            <h2>Increase sales, reduce costs and automate support on any channel</h2>
             <p className={style.textContent}>
               Dialog System is a natural language understanding
               and dialogue management platform that makes it easy to design and integrate a conversational user interface into your mobile app, web application, device, existing bot, text-to-speech response system, and so on.
@@ -60,7 +60,7 @@ export default function DialogSystem({ currentUrl }) {
           <Col md={4} sm={12}>
             <h3>Get more and better leads</h3>
             <p className={style.textContent}>
-              Engage with prospects 24/7. Our customers engagement average is 46%.
+              Engage with prospects 24/7. Our customer engagement average is 46%. 
               Get your team collaborating and taking action, seamlessly transferring conversations from bot to human, and back.
             </p>
           </Col>
@@ -76,7 +76,7 @@ export default function DialogSystem({ currentUrl }) {
             <h3>Automate FAQs</h3>
             <p className={style.textContent}>
               Increase customer satisfaction and reduce support costs.
-              Keeps the conversation balanced and add proactivity when it is needed.
+              Keeps the conversation balanced and adds proactivity when it is needed.
               Drive more engagement and deliver better customer experiences at scale with slot-based dialog management.
               {/* Engage customers on the leading messaging channels, including WhatsApp, Apple Business Chat, Facebook Messenger, Twitter, Line, SMS, RCS and more. */}
             </p>
@@ -96,7 +96,7 @@ export default function DialogSystem({ currentUrl }) {
         <Row className="justify-content-center mb-3">
           <Col xs='auto'>
             <p className={style.textContent}>
-              Engage customers on the most popular messaging channels, including WhatsApp, Apple Business Chat, Facebook Messenger, Twitter, Line, SMS, WeChat and more.
+              Engage customers on the most popular messaging channels, including WhatsApp, Apple Business Chat, Facebook Messenger, Twitter, Line, SMS, WeChat, and more.
               Everything happens in real-time, with your users' choices conditioning the journey.
             </p>
           </Col>
