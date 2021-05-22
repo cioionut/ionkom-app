@@ -158,11 +158,10 @@ export default function Home({ currentUrl }) {
             <h2>Office and Business Automation</h2>
             <p style={{color: '#5f6368'}}>Using a combination of our services we can fully automate your work, <Link href="https://grfvpx7kxvr.typeform.com/to/omcYMMMm"><a target="_blank" rel="noopener" >contact us</a></Link> to find how.</p>
             <p>
-              Robot Process Automation (RPA) has grown alot in the last years but what it promises is not realy achivable without another team with specialized expertise.
+              Robot Process Automation (RPA) has grown a lot in the last years but what it promises is not really achievable without another team with specialized expertise.
             </p>
             <p>
-              We propose a traditional App-API-App approach that avoids the traditional RPA overhead, in many cases the majority of automation tasks can be achivable with a cuple of scripts and of corse a central orchestrator for scheduling. 
-            </p>
+              We propose a traditional App-API-App approach that avoids the traditional RPA overhead, in many cases the majority of automation tasks can be achievable with a couple of scripts and of course a central orchestrator for scheduling.            </p>
             <p>
               Do exactly the same job using programming scripts but cheap and headcount efficient.
             </p>
