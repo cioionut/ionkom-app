@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+
 import Head from 'next/head'
 import Link from 'next/link'
 import Layout, { siteTitle } from '../components/layout'
@@ -5,7 +7,36 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap'
 
 
 export default function Home({ currentUrl }) {
+  const sendEmailServiceEndpoint = 'https://script.google.com/macros/s/AKfycbzxdPp7_5Sc9-4yZVhmorlO6s2HWLahimOsyfhiRRPtlT8KjLM5ojjUjmq57ggqMDbWtQ/exec';
+  const [userEmail, setUserEmail] = useState("");
   const title = `Ionkom - Connect with friends and explore the world around you`;
+
+  const handleSubmit = (evt) => {
+    evt.preventDefault();  
+    const formData = new FormData(evt.target);
+    fetch(sendEmailServiceEndpoint, {
+      headers: {
+        'Accept': 'application/json',
+      },
+      method: 'POST',
+      body: formData,
+      mode: 'no-cors',
+      credentials: 'include'
+    })
+    .then(response => {
+      if (response.ok) return response.json();
+      return undefined;
+    })
+    .then(result => {
+      alert(`Thanks! We will get back to you soon!`);
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+
+    // reset the field
+    setUserEmail('');
+  }
 
   return (
     <Layout home>
@@ -28,10 +59,20 @@ export default function Home({ currentUrl }) {
             <p style={{color: '#5f6368'}}>Face-to-face meetings are the ultimate goal. Share your skills and let our network shape your personal brand.</p>
           </Col>
           <Col>
-            <Form>
+            <Form
+              onSubmit={handleSubmit}
+              // method='POST' 
+              // action='https://script.google.com/macros/s/AKfycbzxdPp7_5Sc9-4yZVhmorlO6s2HWLahimOsyfhiRRPtlT8KjLM5ojjUjmq57ggqMDbWtQ/exec'
+            >
               <Form.Group controlId="formBasicEmail">
                 <Form.Label>Join Ionkom Today - waiting list</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
+                <Form.Control 
+                  name='user_email' 
+                  type="email" 
+                  placeholder="Enter email"
+                  value={userEmail}
+                  onChange={e => setUserEmail(e.target.value)}
+                />
                 <Form.Text className="text-muted">
                   We'll never share your email with anyone else.
                   By clicking Sign Up, you agree to our <Link href="/policies/terms">Terms</Link>. Learn how we collect, use and share your data in our <Link href="/policies/privacy">Data Policy</Link> and how we use cookies and similar technology in our <Link href="/policies/cookies">Cookies Policy</Link>.
