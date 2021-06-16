@@ -6,7 +6,7 @@ import { GA_TRACKING_ID } from '../lib/gtag';
 class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
           <script data-ad-client="ca-pub-7711070281943881" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
