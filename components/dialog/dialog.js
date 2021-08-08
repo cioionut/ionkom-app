@@ -143,9 +143,9 @@ class Dialog extends Component {
   constructor(props) {
     super(props);
     this.apiUrl = props.apiUrl;
-    this.chatBoxTitle = props.chatBoxTitle || 'My Virtual Asisstant';
+    this.chatBoxTitle = props.chatBoxTitle || 'Ionkom Asisstant';
     this.serverNotAvailableMsg = srvNotAvailableMsg;
-    this.stopDialogVariable = "$leg_op"
+    this.stopDialogVariable = "$need_operator"
 
     this.startUtt = "...";
     this.handleUtteranceChange = this.handleUtteranceChange.bind(this);

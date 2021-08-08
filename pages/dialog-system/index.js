@@ -122,9 +122,10 @@ export default function DialogSystem({ currentUrl }) {
         </Row>
         <Row>
           <Col>
-            <Dialog chatBoxTitle='Flight Assistant' apiUrl={apiUrl}/>
+            <Dialog apiUrl={apiUrl}/>
           </Col>
         </Row>
+        <Row style={{paddingBottom: '100px'}}></Row>
       </Container>
     </Layout>
   )
