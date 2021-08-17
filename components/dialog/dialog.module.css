@@ -1,16 +1,22 @@
 .submitBtn {
-    border-radius: 1rem;
-    width: 5rem;
+  border-radius: 1rem;
+  width: 5rem;
 }
 
 .messageCard {
-    max-width: 60%;
+  max-width: 60%;
 }
 .bgLightBlue {
-    background-color:aliceblue;
+  background-color:aliceblue;
 }
 
 .messageScroll {
-    height: 20rem;
-    overflow-y: scroll;
+  height: 20rem;
+  overflow-y: scroll;
 }
+
+@media (max-width: 600px) {
+  .messageCard {
+    max-width: 100%;
+  }
+}  

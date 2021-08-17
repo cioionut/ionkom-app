@@ -126,7 +126,7 @@ export default function Home({ currentUrl }) {
                 Extract semantic entities like locations, persons, events - Free NLU (Natural Language Understanding) - <Link href='/natural-language-software'>Get Product</Link>
               </li>
               <li>
-                Custom Chatbot Flight assistent demo - <Link href='/dialog-system'>Get Product</Link>
+                Ionkom Assistant demo - <Link href='/dialog-system'>Get Product</Link>
               </li>
               <li>
                 Coronavirus Self Checker - coming soon

@@ -100,14 +100,9 @@ class MessageList extends Component {
     this.scrollToBottom = this.scrollToBottom.bind(this);
   }
   scrollToBottom = () => {
-    this.messagesEnd.scrollIntoView({ behavior: "smooth" });
+    this.messagesEnd.scrollIntoView({ behavior: "smooth", block: "nearest"});
   }
-  
-  // // not necessary
-  // componentDidMount() {
-  //   this.scrollToBottom();
-  // }
-  
+
   componentDidUpdate() {
     // avoid main page scroll
     // verify if more than one messages exists before scroll
@@ -128,11 +123,9 @@ class MessageList extends Component {
         key={idx}/>
     );
     return (
-      <div className={`container-fluid ${styles.messageScroll}`}>
+      <div className={`container-fluid ${styles.messageScroll}`} >
         {messageList}
-        <div style={{ float:"left", clear: "both" }}
-            ref={(el) => { this.messagesEnd = el; }}>
-        </div>
+        <div ref={(el) => { this.messagesEnd = el; }}></div>
       </div>
     )
   }
@@ -302,27 +295,28 @@ class Dialog extends Component {
     return (
       <div>
         <div className="card">
-            <div className="card-header">
-              <h5>{this.chatBoxTitle}</h5>
-            </div>
-            <div className="card-body d-flex flex-column p-1">
-                <MessageList messages={this.state.dialog}
-                  handleDialogChange={this.handleDialogChange}
-                  handleResponse={this.handleResponse}
-                  dialogState={this.state.apiResponse.dialog_state}
-                  apiUrl={this.apiUrl}
+          <div className="card-header">
+            <h5>{this.chatBoxTitle}</h5>
+          </div>
+          <div className="card-body d-flex flex-column p-1">
+            <MessageList messages={this.state.dialog}
+              handleDialogChange={this.handleDialogChange}
+              handleResponse={this.handleResponse}
+              dialogState={this.state.apiResponse.dialog_state}
+              apiUrl={this.apiUrl}
+              messagesEnd={ this.messagesEnd }
+            />
+            <form onSubmit={this.handleSubmitForm} className="mt-3 p-1">
+              <div className="input-group">
+                <input type="text" className="form-control" id="utterance" autoComplete="off"
+                  value={this.state.utterance}
+                  onChange={this.handleUtteranceChange} 
+                  placeholder={this.startUtt}
                 />
-                <form onSubmit={this.handleSubmitForm} className="mt-3 p-1">
-                  <div className="input-group">
-                    <input type="text" className="form-control" id="utterance" autoComplete="off"
-                      value={this.state.utterance}
-                      onChange={this.handleUtteranceChange} 
-                      placeholder={this.startUtt}
-                    />
-                    <Button type='submit' className={`float-right ${styles.submitBtn} ml-1`} color="primary" type="submit">Send</Button>
-                  </div>
-                </form>
-            </div>
+                <Button type='submit' className={`float-right ${styles.submitBtn} ml-1`} color="primary" type="submit">Send</Button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     );

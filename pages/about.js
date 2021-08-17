@@ -67,7 +67,7 @@ export default function About({ currentUrl }) {
           <Col>
             <h2>Little help in Healthcare</h2>
               Ionkom Coronavirus Self-Chacker is our first product in health universe.
-              It is a digital assistent that helps people to:
+              It is a digital assistant that helps people to:
               <ul>
                 <li>
                   get fast guidance to the official information about COVID-19
