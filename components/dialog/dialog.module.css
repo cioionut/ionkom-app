@@ -1,6 +1,8 @@
 .submitBtn {
   border-radius: 1rem;
   width: 5rem;
+  /* font-weight: 600; */
+  /* font-size: large; */
 }
 
 .messageCard {

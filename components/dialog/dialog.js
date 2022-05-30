@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styles from './dialog.module.css';
-import { Button, Card } from 'react-bootstrap';
+import { Button, Card, Row, Col } from 'react-bootstrap';
 
 const srvNotAvailableMsg = "I'm trying to establish the connection with the dialog server, please try in a few moments";
 
@@ -86,11 +86,13 @@ function Message(props) {
   }
 
   return (
-    <div className={`row ${isMe ? 'justify-content-end' : ''}`}>
-      <div className={`card ${styles.messageCard} ${isMe ? styles.bgLightBlue: ''} m-1`}>
+    <Row className={`${isMe ? 'justify-content-end' : ''} px-0`}>
+      <Col xs='auto' className={`${styles.messageCard} px-0`}>
+        <Card className={`${isMe ? styles.bgLightBlue: ''} m-1`}>
           {cardBody}
-      </div>
-    </div>
+        </Card>
+      </Col>
+    </Row>
   )
 }
 
@@ -123,7 +125,7 @@ class MessageList extends Component {
         key={idx}/>
     );
     return (
-      <div className={`container-fluid ${styles.messageScroll}`} >
+      <div className={`${styles.messageScroll} p-3`} >
         {messageList}
         <div ref={(el) => { this.messagesEnd = el; }}></div>
       </div>
@@ -298,7 +300,7 @@ class Dialog extends Component {
           <div className="card-header">
             <h5>{this.chatBoxTitle}</h5>
           </div>
-          <div className="card-body d-flex flex-column p-1">
+          <div className="card-body p-0">
             <MessageList messages={this.state.dialog}
               handleDialogChange={this.handleDialogChange}
               handleResponse={this.handleResponse}
@@ -306,14 +308,14 @@ class Dialog extends Component {
               apiUrl={this.apiUrl}
               messagesEnd={ this.messagesEnd }
             />
-            <form onSubmit={this.handleSubmitForm} className="mt-3 p-1">
+            <form onSubmit={this.handleSubmitForm} className="mt-3 p-2">
               <div className="input-group">
                 <input type="text" className="form-control" id="utterance" autoComplete="off"
                   value={this.state.utterance}
                   onChange={this.handleUtteranceChange} 
                   placeholder={this.startUtt}
                 />
-                <Button type='submit' className={`float-right ${styles.submitBtn} ml-1`} color="primary" type="submit">Send</Button>
+                <Button type='submit' className={`${styles.submitBtn} ms-1`} color="primary">Send</Button>
               </div>
             </form>
           </div>

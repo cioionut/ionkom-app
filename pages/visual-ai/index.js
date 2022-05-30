@@ -102,26 +102,27 @@ export default function VisualAI({ currentUrl }) {
             <h2>Pricing</h2>
           </Col>
         </Row>
-        <Row>
-          <Container>
-          <div className="pricing card-deck flex-column flex-md-row mb-3">
+        <Row className='row-cols-1 row-cols-md-4 mb-3 text-center'>
+          <Col>
             <div className="card card-pricing text-center px-2 mb-4">
-                <span className="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Starter</span>
-                <div className="bg-transparent card-header pt-4 border-0">
-                    <h2 className="h2 font-weight-normal text-primary text-center">$<span className="price">0</span><span className="h6 text-muted ml-2">/ month</span></h2>
-                    <p className={`bg-transparent ${style.textContent} `}>For individuals who just want the essentials to get started quickly</p>
-                </div>
-                <div className="card-body pt-0">
-                    <ul className="list-unstyled mb-4">
-                        <li><b>100 / month quota</b></li>
-                        <li className={style.textContent}>Hard Limit</li>
-                        {/* <li>Monthly updates</li>
-                        <li>Free cancelation</li> */}
-                    </ul>
-                    <Button className='mb-3' variant='outline-primary' href="https://rapidapi.com/ionkom/api/ocr14/endpoints" target="_blank" rel="noopener" >Order Now</Button>
-                    {/* <button type="button" className="btn btn-outline-secondary mb-3">Order now</button> */}
-                </div>
-            </div>
+                  <span className="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Starter</span>
+                  <div className="bg-transparent card-header pt-4 border-0">
+                      <h2 className="h2 font-weight-normal text-primary text-center">$<span className="price">0</span><span className="h6 text-muted ml-2">/ month</span></h2>
+                      <p className={`bg-transparent ${style.textContent} `}>For individuals who just want the essentials to get started quickly</p>
+                  </div>
+                  <div className="card-body pt-0">
+                      <ul className="list-unstyled mb-4">
+                          <li><b>100 / month quota</b></li>
+                          <li className={style.textContent}>Hard Limit</li>
+                          {/* <li>Monthly updates</li>
+                          <li>Free cancelation</li> */}
+                      </ul>
+                      <Button className='mb-3' variant='outline-primary' href="https://rapidapi.com/ionkom/api/ocr14/endpoints" target="_blank" rel="noopener" >Order Now</Button>
+                      {/* <button type="button" className="btn btn-outline-secondary mb-3">Order now</button> */}
+                  </div>
+              </div>
+          </Col>
+          <Col>
             <div className="card card-pricing popular shadow text-center px-2 mb-4">
                 <span className="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Professional</span>
                 <div className="bg-transparent card-header pt-4 border-0">
@@ -136,6 +137,8 @@ export default function VisualAI({ currentUrl }) {
                     <Button className='mb-3' variant='primary' href="https://rapidapi.com/ionkom/api/ocr14/endpoints" target="_blank" >Order Now</Button>
                 </div>
             </div>
+          </Col>                      
+          <Col>
             <div className="card card-pricing text-center px-2 mb-4">
                 <span className="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Business</span>
                 <div className="bg-transparent card-header pt-4 border-0">
@@ -150,6 +153,8 @@ export default function VisualAI({ currentUrl }) {
                     <Button className='mb-3' variant='outline-primary' href="https://rapidapi.com/ionkom/api/ocr14/endpoints" target="_blank" >Order Now</Button>                    
                 </div>
             </div>
+          </Col>
+          <Col>
             <div className="card card-pricing text-center px-2 mb-4">
                 <span className="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Enterprise</span>
                 <div className="bg-transparent card-header pt-4 px-2 border-0">
@@ -164,8 +169,7 @@ export default function VisualAI({ currentUrl }) {
                   <Button className='mb-3' variant='outline-primary' href="https://rapidapi.com/ionkom/api/ocr14/endpoints" target="_blank" >Order Now</Button>                    
                 </div>
             </div>
-          </div>
-        </Container>
+          </Col>
         </Row>
         <Row className="justify-content-center mb-3 mt-5">
           <Col xs='auto'>
@@ -178,23 +182,19 @@ export default function VisualAI({ currentUrl }) {
               Computer Vision's OCR APIs support several languages. 
               They require you to specify a language code.
             </p>
-            
-            <Accordion>
-            <Card className='mb-2' style={{border:0}}>
-              <Accordion.Toggle as={Card.Header} eventKey="0" style={{cursor: "pointer"}}>
+          </Col>            
+          <Accordion>
+            <Accordion.Item eventKey="0">
+              <Accordion.Header>
                 <h2 style={{ fontSize: "1.12rem", display: "inline-block" }}>View supported languages</h2>
-                <div style={{ display: "inline-block", float: "right" }}>
-                  <ContextAwareToggle eventKey="0" />
-                </div>
-              </Accordion.Toggle>
-                <Accordion.Collapse eventKey="0">
-                <Card.Body>
-                  <Table striped bordered hover>
+              </Accordion.Header>
+              <Accordion.Body>
+                <Table striped bordered hover>
                     <thead>
                       <tr>
                         <th>#</th>
                         <th>Language</th>
-                        <th>Lang. Code  <ContextAwareToggle eventKey="0" /></th>
+                        <th>Lang. Code</th>
                       </tr>
                     </thead>
                       <tbody>
@@ -208,11 +208,9 @@ export default function VisualAI({ currentUrl }) {
                           })}
                       </tbody>
                   </Table>
-                </Card.Body>
-              </Accordion.Collapse>
-              </Card>
-            </Accordion>
-          </Col>
+              </Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
         </Row>
       </Container>
     </Layout>
