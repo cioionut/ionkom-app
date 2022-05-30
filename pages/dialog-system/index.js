@@ -83,7 +83,7 @@ export default function DialogSystem({ currentUrl }) {
           </Col>
         </Row>
         <hr/>
-        <Row className="justify-content-center mb-3">
+        <Row className="justify-content-center mb-4">
           <Col xs='auto'>
             <h2>Competitive Advantage</h2>
           </Col>
